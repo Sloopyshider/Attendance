@@ -113,7 +113,7 @@ if (isset($_GET['s_id'])) {
 
 
                                 echo '    <br>       
-                            <p style="font-size: 50px" > Today Date is '.$users_id['datetd'].'</p> <br>   
+                            <p style="font-size: 50px" > Today Date is '. date('D d M Y') .'</p> <br>   
                             <p style="font-size: 50px" > Time in = '.$users_id['timein'].'</p> <br>   
                             <form action="insert.php" method="POST">
                         <input type="submit" name="Timein" value="Time-IN">

@@ -121,7 +121,7 @@ if(isset($_POST['Timein']))
 
             echo
 
-            header ("location:time.php");
+            header ("location:intime.php");
         }
 
     }
