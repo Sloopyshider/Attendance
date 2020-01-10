@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eprofile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +28,23 @@
   </component>
   <component name="ProjectId" id="1VMYbvOW8xCtyypHDW63piAnbVr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -80,6 +92,7 @@
       <workItem from="1578460739265" duration="2869000" />
       <workItem from="1578472451734" duration="3285000" />
       <workItem from="1578621095926" duration="2103000" />
+      <workItem from="1578634915305" duration="1782000" />
     </task>
     <task id="LOCAL-00001" summary="In Time new file">
       <created>1578462987005</created>
@@ -110,6 +123,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="In Time new file" />
     <option name="LAST_COMMIT_MESSAGE" value="In Time new file" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="776" y="442" key="NewPhpFileDialog" timestamp="1578635286606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578635286606" />
+    <state x="752" y="242" key="RollbackChangesDialog" timestamp="1578634932064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="242" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578634932064" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
