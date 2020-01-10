@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cssfiles/main2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cssfiles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cssfiles/main1.js" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intime.php" beforeDir="false" afterPath="$PROJECT_DIR$/intime.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/navbar2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/verify.php" afterDir="false" />
-    </list>
+    <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
