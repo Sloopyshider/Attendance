@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="../cssfiles/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/theme.css" rel="stylesheet" type="text/css">
+    <link href="../css/theme.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -22,8 +24,12 @@
         Number:      &nbsp   '.$user['contact'].'
         <br>
 
-        <button class="btn"> Logout</button>
-
+        <button class="btn" href="logout.php"> Logout</button>
+        <a href="sections/logout.php">Log out</a>
+       			
+									
+									
+					
     </label>
          
                          ';
