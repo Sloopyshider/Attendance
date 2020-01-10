@@ -23,8 +23,8 @@
         <br>
         Number:      &nbsp   '.$user['contact'].'
         <br>
-
-        <button class="btn" href="logout.php"> Logout</button>
+        
+        
         <a href="sections/logout.php">Log out</a>
        			
 									

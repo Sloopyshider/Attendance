@@ -197,7 +197,7 @@ $timein = date('H:i:s');
 
 if(isset($_SESSION['user'])) {
 
-    $stmt = $conn->prepare("SELECT * FROM timeattend WHERE users_id=:users_id and datetd = current_date ");
+    $stmt = $conn->prepare("SELECT * FROM timeattend WHERE users_id=:users_id and datetd =   current_date ");
     $stmt->execute(['users_id' => $_SESSION['user']]);
     $users_id = $stmt->fetch();
 
