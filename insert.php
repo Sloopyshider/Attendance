@@ -149,7 +149,7 @@ if(isset($_POST['Timeout']))
 
         if($insertStmt)
         {
-            echo 'Data Inserted';
+            header ("location:intime.php");
         }
 
     }

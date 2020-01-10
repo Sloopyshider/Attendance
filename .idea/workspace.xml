@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cssfiles/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cssfiles/main1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intime.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sections/companylogogreen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sections/footer2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cssfiles/main2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssfiles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssfiles/main1.js" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time.php" beforeDir="false" afterPath="$PROJECT_DIR$/time.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intime.php" beforeDir="false" afterPath="$PROJECT_DIR$/intime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/navbar2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/verify.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,17 +44,17 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Attendance\sections" />
-      <recent name="C:\xampp\htdocs\Attendance" />
-      <recent name="C:\xampp\htdocs\Attendance\cssfiles" />
-      <recent name="C:\xampp\htdocs\Attendance\admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Attendance\includes" />
       <recent name="C:\xampp\htdocs\Attendance" />
       <recent name="C:\xampp\htdocs\Attendance\admin" />
       <recent name="C:\xampp\htdocs\Attendance\sections" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Attendance\sections" />
+      <recent name="C:\xampp\htdocs\Attendance" />
+      <recent name="C:\xampp\htdocs\Attendance\cssfiles" />
+      <recent name="C:\xampp\htdocs\Attendance\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,8 +85,18 @@
       <workItem from="1578274478273" duration="23855000" />
       <workItem from="1578360373935" duration="19364000" />
       <workItem from="1578448755932" duration="10317000" />
-      <workItem from="1578460739265" duration="2131000" />
+      <workItem from="1578460739265" duration="2869000" />
+      <workItem from="1578472451734" duration="3285000" />
+      <workItem from="1578621095926" duration="1829000" />
     </task>
+    <task id="LOCAL-00001" summary="In Time new file">
+      <created>1578462987005</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578462987005</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +114,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="In Time new file" />
+    <option name="LAST_COMMIT_MESSAGE" value="In Time new file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

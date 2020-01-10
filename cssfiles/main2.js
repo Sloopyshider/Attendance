@@ -41,7 +41,7 @@ function btn() {
 }
 
 function button() {
-    alert("You have successfully Time Out!");
+    alert("You have successfully Time in!");
 }
 
 function n(){
