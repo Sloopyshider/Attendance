@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/css/theme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cssfiles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/eprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intime.php" beforeDir="false" afterPath="$PROJECT_DIR$/intime.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/navbar2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sections/profile.jpg" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -51,7 +48,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -98,7 +95,9 @@
       <workItem from="1578460739265" duration="2869000" />
       <workItem from="1578472451734" duration="3285000" />
       <workItem from="1578621095926" duration="2103000" />
-      <workItem from="1578634915305" duration="9560000" />
+      <workItem from="1578634915305" duration="9750000" />
+      <workItem from="1578962045941" duration="3738000" />
+      <workItem from="1578966959502" duration="25282000" />
     </task>
     <task id="LOCAL-00001" summary="In Time new file">
       <created>1578462987005</created>
@@ -131,6 +130,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="In Time new file" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578988314763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578988314763" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1578988227196">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578988227196" />
     <state x="776" y="442" key="NewPhpFileDialog" timestamp="1578635286606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -139,6 +146,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="242" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578634932064" />
+    <state x="421" y="323" key="SettingsEditor" timestamp="1578994429419">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="421" y="323" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578994429419" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1578982621830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578982621830" />
+    <state x="512" y="340" key="scopes" timestamp="1578994334072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="512" y="340" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1578994334072" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

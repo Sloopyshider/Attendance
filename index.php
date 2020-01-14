@@ -1,7 +1,5 @@
-
-
-
 <?php include 'sections/session.php'; ?>
+
 <?php
 if(isset($_SESSION['user'])){
     header('location:  profile.php');
