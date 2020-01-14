@@ -85,5 +85,5 @@ include "sections/session.php";
 
 
 <?php
-include include "sections/footer2.php";
+include "sections/footer2.php";
 ?>
