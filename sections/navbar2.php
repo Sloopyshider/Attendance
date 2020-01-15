@@ -17,6 +17,8 @@
         echo '
             
  <label class="employeename">
+ 
+ <!-- Change here -->
         <Br>    Hello: &nbsp; '.$user['name'].' '.$user['midname'].' '.$user['lastname'].'
         <br>
         Position:    &nbsp      '.$user['pos'].'
