@@ -17,9 +17,9 @@
         echo '
             
  <label class="employeename">
-        <Br>    Hello: &nbsp; '.$user['name'].'
+        <Br>    Hello: &nbsp; '.$user['name'].' '.$user['midname'].' '.$user['lastname'].'
         <br>
-        Intern:    &nbsp      '.$user['pos'].'
+        Position:    &nbsp      '.$user['pos'].'
         <br>
         Number:      &nbsp   '.$user['contact'].'
         <br>

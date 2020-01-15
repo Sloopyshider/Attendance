@@ -4,6 +4,12 @@ include "sections/session.php";
 
 ?>
 
+
+<?php
+if(!isset($_SESSION['user'])){
+    header('location: index.php');
+}
+?>
 <head>
 
     <title> Employee Profile </title>
@@ -43,6 +49,8 @@ include "sections/session.php";
 
         echo '
 <div>
+
+<form method="POST" > 
     <label for="ename" style="margin-left: 27%"><b>Name</b></label>
     <input type="text" placeholder="Enter Full Name" name="ename" required>
     
@@ -72,6 +80,8 @@ include "sections/session.php";
     <br>
     <br>
     <input type="button" name="update"  value="Update" class="sbmt"/>
+ <form> 
+
  </div>   
     
     
