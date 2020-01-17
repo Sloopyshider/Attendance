@@ -75,7 +75,7 @@ if(isset($_POST['search']))
 
 // Insert Data
 
-if(isset($_POST['insert']))
+if(isset($_['insert']))
 {
     $data = getPosts();
     if(empty($data[0]) || empty($data[1]) || empty($data[2]) || empty($data[3]) | empty($data[4]))
