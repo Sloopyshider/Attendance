@@ -8,14 +8,13 @@ body{
     height: 100px;
     width: 100%;
     background-color: #87B049;
-    padding-top: 10px;
+    padding-top: 2px;
 }
 
 .img1
 {
     height: 80px;
     width: 300px;
-    padding-left: 20px;
 }
 .img2
 {
@@ -50,6 +49,7 @@ a {
     font-weight: bold;
     top: auto;
 }
+
 .employeeposition{
     position: fixed;
     right: 17%;
@@ -87,13 +87,12 @@ hr {
 }
 .footer {
     position: fixed;
-    top: 100%;
-    height: 10%;
+    bottom: 5%;
+    height: 2%;
     width: 1685px;
     background-color: #565656;
 }
 .marq{
-    padding-bottom: 30px;
     font-size: 22px;
     height: 20px;
     color: #87B049;
@@ -122,7 +121,7 @@ hr {
     color: #87B049;
     font-weight: bold;
 }
-table {
+.table1 {
     position: absolute;
     font-family: Arial, sans-serif;
     left: 30%;
@@ -133,9 +132,9 @@ table {
 
 }
 th, td{
-    padding-top: 20px;
     border: 2px solid black;
     text-align: center;
+    width: auto;
 }
 
 tr:nth-child(1) {
@@ -197,22 +196,79 @@ tr:nth-child(1) {
     bottom: 450px;
     background-color: red;
 }
-input[type=text], input[type=password], input[type=number], input[type=date], input[type=tel]{
-    position: center;
 
+
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=tel]
+{
+    position: center;
     width: 20%;
     padding: 10px;
     display: inline-block;
     border: 2px solid;
     background: #f1f1f1;
 }
-
-.sbmt{
-    position: center;
-    width: 5%;
-    padding: 4px;
-    display: inline-block;
-    border: 2px solid;
-    background: #f1f1f1;
-    margin-left: 73%;
+.userdetails{
+    position: absolute;
+    font-size: 30px;
+    left: 44%;
+    top: 17%;
 }
+.personal {
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 30px;
+    left: 31%;
+    top:33%;
+}
+.table2 {
+    position: absolute;
+    background-color: #565656;
+    top: 40%;
+    left: 30%;
+}
+.account {
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 30px;
+    left: 56%;
+    top:33%;
+}
+.table3 {
+    position: absolute;
+    background-color: #565656;
+    top: 40%;
+    left: 55%;
+}
+.compinfo {
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 30px;
+    left: 56%;
+    bottom: 30%;
+}
+.table4 {
+    position: absolute;
+    background-color: #565656;
+    bottom: 12%;
+    left: 55%;
+}
+.sbmt{
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 20px;
+    left: 46%;
+    bottom: 20%;
+}
+.back{
+    position: absolute;
+    border: 2px black groove;
+    background-color: #87B049;
+    font-size: 20px;
+    left: 46%;
+    bottom: 10%;
+}
+

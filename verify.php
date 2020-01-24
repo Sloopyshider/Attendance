@@ -16,7 +16,7 @@ if(isset($_POST['login'])){
         if($row['numrows'] > 0){
 
             if(password_verify($password123, $row['password'] )){
-//                superhalaga
+
                 if($row['pos'] <= 1){
                     $_SESSION['admin'] = $row['id'];
                 }

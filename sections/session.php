@@ -8,11 +8,11 @@ if(isset($_SESSION['admin'])){
 
 if(isset($_SESSION['user'])){
     $conn = $pdo->open();
-
     try{
-        $stmt = $conn->prepare("SELECT * FROM employee WHERE id=:id");
+        $stmt = $conn-> prepare("SELECT * FROM employee WHERE id=:id");
         $stmt->execute(['id'=>$_SESSION['user']]);
         $user = $stmt->fetch();
+
 
 //        $stmt = $conn->prepare("select p.posname, e.name from employee e
 //                                            LEFT JOIN position p on p.pos_id = e.pos where id = :id");

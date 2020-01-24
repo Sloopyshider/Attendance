@@ -22,7 +22,6 @@ Class Database{
     public function close(){
         $this->conn = null;
     }
-
 }
 
 $pdo = new Database();

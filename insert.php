@@ -69,7 +69,6 @@ if(isset($_POST['search']))
             $datetd = $user[3];
             $total   = $user[4];
         }
-
     }
 }
 

@@ -94,7 +94,7 @@ if(isset($_SESSION['user'])) {
 echo ' 
 
 
-<table style="bottom: 20%">
+<table class="table1" style="bottom: 20%">
     <tr>
         <th> </th>
         <th width="150px">Date</th>
@@ -240,13 +240,11 @@ echo '
   
   </form>  
 '
-
 ?>
 <!--Time in End-->
 
 
-<div class="vl">
-</div>
+
 </body>
 <?php
 include "sections/footer2.php";

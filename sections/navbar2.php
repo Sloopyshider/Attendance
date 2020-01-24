@@ -12,7 +12,7 @@
 <div class="head1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <img class="img1" src="sections/companylogogreen.jpg" alt="comp">
-    <?php
+<?php
     if(isset($_SESSION['user'])){
         echo '
             
