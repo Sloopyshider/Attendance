@@ -103,15 +103,14 @@ if(isset($_['insert']))
 if(isset($_POST['Timein']))
 {
     $data = getPosts();
-    if(empty($data[0]) || empty($data[1]))
+    if(empty($data[0]))
     {
         echo 'Enter The User Data To Insert';
     }  else {
 
-        $insertStmt = $con->prepare('INSERT INTO timeattend(users_id,timein,datetd) VALUES(:users_id,:timein,current_date)');
+        $insertStmt = $con->prepare('INSERT INTO timeattend(users_id,timein,datetd) VALUES(:users_id,current_time ,current_date)');
         $insertStmt->execute(array(
             ':users_id'=> $data[0],
-            ':timein'=> $data[1],
 
         ));
 
@@ -134,15 +133,16 @@ if(isset($_POST['Timein']))
 if(isset($_POST['Timeout']))
 {
     $data = getPosts();
-    if(empty($data[0])   ||   empty($data[2]))
+    if(empty($data[0]))
     {
         echo 'Enter The User Data To Insert';
     }  else {
 
-        $insertStmt = $con->prepare('UPDATE timeattend SET  timeout =:timeout where datetd = current_date and users_id = :users_id and timeout = 00');
+        $insertStmt = $con->prepare('UPDATE timeattend SET  timeout = current_time where datetd = current_date and users_id = :users_id and timeout
+ is null');
         $insertStmt->execute(array(
             ':users_id'=> $data[0],
-            ':timeout'=> $data[2],
+
 
 
         ));
