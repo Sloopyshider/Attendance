@@ -21,15 +21,30 @@
  <!-- Change here -->
         <Br>    Hello: &nbsp; '.$user['name'].' '.$user['midname'].' '.$user['lastname'].'
         <br>
-        Position:    &nbsp      '.$user['pos'].'
-        <br>
-        Number:      &nbsp   '.$user['contact'].'
-        <br>
+            Number:      &nbsp   '.$user['contact'].'
+
         
         
-        <a href="sections/logout.php">Log out</a>
-       			
-									
+    
+        ';
+    }
+
+
+
+
+
+       echo'
+
+<br>
+        Position:    &nbsp      '.$user1['posname'].'
+        <br>
+
+        
+            <a href="sections/logout.php">Log out</a>   
+'
+    ?>
+
+
 									
 					
     </label>
