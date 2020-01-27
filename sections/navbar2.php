@@ -9,18 +9,16 @@
 
 <body>
 
-
-
 <div class="head1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <img class="img1" src="sections/companylogogreen.jpg" alt="comp">
-    <?php
-
-
+<?php
     if(isset($_SESSION['user'])){
         echo '
             
  <label class="employeename">
+ 
+ <!-- Change here -->
         <Br>    Hello: &nbsp; '.$user['name'].' '.$user['midname'].' '.$user['lastname'].'
         <br>
             Number:      &nbsp   '.$user['contact'].'
@@ -51,7 +49,11 @@
 					
     </label>
          
+                         ';
+    }
 
+
+    ?>
 </div>
 
 

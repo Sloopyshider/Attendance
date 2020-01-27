@@ -30,6 +30,4 @@ if(isset($_SESSION['user'])){
 
     $pdo->close();
 }
-
-
 ?>

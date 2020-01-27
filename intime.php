@@ -233,7 +233,7 @@ include "sections/navbar2.php";
 echo ' 
 
 
-<table style="bottom: 20%">
+<table class="table1" style="bottom: 20%">
     <tr>
         <th width="150px">
         Date</th>
@@ -506,13 +506,11 @@ elseif($timein > null){
   
   </form>  
 '
-
 ?>
 <!--Time in End-->
 
 
-<div class="vl">
-</div>
+
 </body>
 <?php
 include "sections/footer2.php";
