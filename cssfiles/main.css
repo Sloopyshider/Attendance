@@ -224,8 +224,8 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 .table2 {
     position: absolute;
     background-color: #565656;
-    top: 40%;
-    left: 30%;
+    top: 25%;
+    left: 25%;
 }
 .account {
     position: absolute;
@@ -238,7 +238,7 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 .table3 {
     position: absolute;
     background-color: #565656;
-    top: 40%;
+    top: 25%;
     left: 55%;
 }
 .compinfo {
@@ -252,23 +252,23 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 .table4 {
     position: absolute;
     background-color: #565656;
-    bottom: 12%;
-    left: 55%;
+    bottom: 11%;
+    left: 56%;
 }
-.sbmt{
+.edit{
+    position: absolute;
+    border: 2px black groove;
+        background-color: #87B049;
+    font-size: 20px;
+    left: 46%;
+    bottom: 30%;
+}
+.create{
     position: absolute;
     border: 2px black groove;
     background-color: #87B049;
     font-size: 20px;
-    left: 46%;
+    left: 44%;
     bottom: 20%;
-}
-.back{
-    position: absolute;
-    border: 2px black groove;
-    background-color: #87B049;
-    font-size: 20px;
-    left: 46%;
-    bottom: 10%;
 }
 
