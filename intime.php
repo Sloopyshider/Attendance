@@ -205,7 +205,7 @@ $sqllate = $conn->query("SELECT COUNT(timein) FROM timeattend WHERE timein >= '0
 include "sections/navbar2.php";
 ?>
 
-<body>
+<body value="1">
 <hr>
 
 

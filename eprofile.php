@@ -21,7 +21,8 @@ if(isset($_POST['update_profile'])){
     $numb = $_POST ['numb'];
     $con_pass = $_POST ['con_pass'];
 
-$pass = password_hash('$pass', PASSWORD_DEFAULT);
+
+
 
 
 
@@ -61,16 +62,17 @@ $pass = password_hash('$pass', PASSWORD_DEFAULT);
     $stmt =  $conn->prepare($stmt);
     $pdoExc =  $stmt->execute($parameters);
 
+    $pass = password_hash('$pass', PASSWORD_DEFAULT);
 
-
-
-
-
-    if ($pdoExc){
-        echo '<script>alert("Successful")</script>';
+    if ($_POST['pass'] !== $_POST ['con_pass']){
+        echo '<script>alert("Password not match")</script>';
+        header('e.profile.php');
     }else{
-        echo 'error';
+        echo '<script>alert("Success!")</script>';
     }
+
+
+
 
 }
 
@@ -105,20 +107,12 @@ $pass = $user ['password'];
 $con_pass = $user ['password'];
 
 
-
-
-
-
-
-
 ?>
 
     <head>
 
         <title> Employee Profile </title>
         <link href='cssfiles/main.css' rel='stylesheet' type='text/css'>
-        <link href='../css/theme.css' rel='stylesheet' type='text/css'>
-        <link href='../css/theme.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
 
@@ -130,7 +124,10 @@ echo "
         
 <hr>
 <label class='userdetails'> User Details </label>
-<form action='eprofile.php' method='post'> 
+<form action='eprofile.php' method='post'>
+
+<img src='avatar1.jpg' id='dp' class='editAvatar' alt='dp'>
+ 
 
 <label
     <label class='personal'></label>
@@ -161,16 +158,18 @@ echo "
    
     </table>
     
+    
+    <form name='formChange' method='post' action='' onsubmit='return validatePassword()'>
     <table class='table3'>
         <th> 
         
-                Password<input type='password' placeholder='Update your Password' readonly name='pass' onkeyup='check();' id='pass' style='width: 100%' value='$pass'/>
+             Password<input type='password' placeholder='Update your Password' readonly name='pass' onsubmit='' id='pass' style='width: 100%' value='$pass'/>
             <br> <br>
-            Confirm Password<input type='password' placeholder='Re-type your New Password' readonly name='con_pass' onkeyup='check();' id='con_pass' style='width: 100%' value='$pass'/>
+            Confirm Password<input type='password' placeholder='Re-type your New Password' readonly name='con_pass' id='con_pass' style='width: 100%' value='$pass'/>
             <br> <br>
             
         </th>
-        
+        </form>
     
     <table class='table4'>
         <th>
@@ -196,13 +195,11 @@ echo $positionDropdown;
 echo "
             <br>
             <br>
-                Mobile Number<input type='tel' placeholder='Please put your number' readonly name='numb' id='numb' style='width: 100%' value='$numb'/>
+                Mobile Number<input type='tel' placeholder='Please put your number' readonly name='numb' id='numb' style='width: 100%' value='$numb' maxlength='11'/>
             <br>
         </th> 
-    
-    
+
         <button class='edit' name='update_profile' onclick='return activateFields()' id='editButton' value='1'> EDIT </button>
-        <button class='create' name='create_profile' id='createButton' value='1'> Create new user </button>
         
             </table>
 </form>";
@@ -237,10 +234,21 @@ echo "
                     let textFields = [
                         'username', 'fname', 'mid_name', 'last_name', 'bday', 'address', 'city', 'pass', 'email_add', 'numb', 'con_pass'];  
                     if(editable) { 
+                        
                         if(!confirm('Are you sure you want to update this data?')) {
+                            
+                             let password = document.getElementById('pass').value;
+                                 let confirmPassword = document.getElementById('con_pass').value;
+                                 if (password !== confirmPassword){
+                                     alert('password do not match');
+                                    return originalValues;
+                                 }
+                                     
+                            
                             textFields.forEach(textField => {
                                    document.getElementById(textField).value = originalValues[textField];
-                                     
+                                 
+                                 
                             });
                             return false;
                         }
@@ -248,16 +256,19 @@ echo "
                         } else
                             textFields.forEach(textField => {
                                 document.getElementById(textField).readOnly = false;
+                                
                                    
                         });
                            
                             document.getElementById('posit').disabled = false;
-                            document.getElementById('editButton').innerHTML = 'Update';
+                            document.getElementById('editButton').innerHTML = 'Update';  
+                            
+                            
+                            
                             editable = true;
                             return false;         
-                        }   
-                        
-                        
+                        }
+                   
                     </script>
         ";
 ?>

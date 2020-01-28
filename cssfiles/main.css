@@ -16,13 +16,6 @@ body{
     height: 80px;
     width: 300px;
 }
-.img2
-{
-    height: 75px;
-    width: 77px;
-    float: right;
-    padding-right: 380px;
-}
 
 .btn {
     position: absolute;
@@ -47,7 +40,7 @@ a {
     font-size: 14px;
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
-    top: 0px;
+    top: 0;
 }
 
 .employeeposition{
@@ -270,5 +263,63 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     font-size: 20px;
     left: 44%;
     bottom: 20%;
+}
+
+.dropbtn {
+    background-color: #87B049;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #87B049;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    left: 55px;
+    bottom: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #87B049;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.avatar {
+
+    float: right;
+    padding-right: 460px;
+    bottom: 50px;
+
+}
+.editAvatar{
+    bottom: 20px;
+    height: 250px;
+    width: 250px;
+    padding-left: 3%;
+    padding-top: 7%;
 }
 
