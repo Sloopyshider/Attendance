@@ -15,19 +15,26 @@ if(isset($_POST['update_profile'])){
     $bday = $_POST ['bday'];
     $address = $_POST ['address'];
     $city = $_POST ['city'];
-    $pass = $_POST ['pass'];
     $email_add = $_POST ['email_add'];
     $posit = $_POST ['posit'];
     $numb = $_POST ['numb'];
+    $pass = $_POST ['pass'];
     $con_pass = $_POST ['con_pass'];
 
+    $proceed = true;
 
+    if($pass || $con_pass) {
+        if($pass != $con_pass) {
+            echo '<script>alert("Password not match")</script>';
+            $proceed = false;
+            header('e.profile.php');
+        } else {
+            $pass = password_hash($pass, PASSWORD_DEFAULT);
+        }
+    }
 
-
-
-
-
-    $stmt = 'UPDATE `employee` SET 
+    if($proceed) {
+        $stmt = 'UPDATE `employee` SET 
 
                     `username`=:username,
                     `email`=:email_add,
@@ -43,33 +50,27 @@ if(isset($_POST['update_profile'])){
                     
                     WHERE id =:id';
 
-    $parameters = [
-        ':username' => $username,
-        ':email_add' => $email_add,
-        ':pass' => $pass,
-        ':fname' => $fname,
-        ':mid_name' => $mid_name,
-        ':last_name' => $last_name,
-        ':posit' => $posit,
-        ':bday' => $bday,
-        ':address' => $address,
-        ':city' => $city,
-        ':numb' => $numb,
-        ':id' => $id
+        $parameters = [
+            ':username' => $username,
+            ':email_add' => $email_add,
+            ':pass' => $pass,
+            ':fname' => $fname,
+            ':mid_name' => $mid_name,
+            ':last_name' => $last_name,
+            ':posit' => $posit,
+            ':bday' => $bday,
+            ':address' => $address,
+            ':city' => $city,
+            ':numb' => $numb,
+            ':id' => $id
+        ];
 
-    ];
+        $stmt =  $conn->prepare($stmt);
+        $pdoExc =  $stmt->execute($parameters);
 
-    $stmt =  $conn->prepare($stmt);
-    $pdoExc =  $stmt->execute($parameters);
-
-    $pass = password_hash('$pass', PASSWORD_DEFAULT);
-
-    if ($_POST['pass'] !== $_POST ['con_pass']){
-        echo '<script>alert("Password not match")</script>';
-        header('e.profile.php');
-    }else{
-        echo '<script>alert("Success!")</script>';
+//        $pass = password_hash('$pass', PASSWORD_DEFAULT);
     }
+
 
 
 
@@ -163,9 +164,9 @@ echo "
     <table class='table3'>
         <th> 
         
-             Password<input type='password' placeholder='Update your Password' readonly name='pass' onsubmit='' id='pass' style='width: 100%' value='$pass'/>
+             Password<input type='password' placeholder='Update your Password' readonly name='pass' onsubmit='' id='pass' style='width: 100%'/>
             <br> <br>
-            Confirm Password<input type='password' placeholder='Re-type your New Password' readonly name='con_pass' id='con_pass' style='width: 100%' value='$pass'/>
+            Confirm Password<input type='password' placeholder='Re-type your New Password' readonly name='con_pass' id='con_pass' style='width: 100%'/>
             <br> <br>
             
         </th>
