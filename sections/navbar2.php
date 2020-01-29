@@ -49,7 +49,7 @@
     <img src="down2.jpg" width="22px" height="18px" onclick="myFunction()" class="dropbtn">
     <div id="myDropdown" class="dropdown-content">
     <a href="intime.php">Attendance</a>
-    <a href="intime.php ">Record</a>
+    <a href="timein.php ">Record</a>
     <a href="eprofile.php">Employee Profile</a>
     <a href="sections/logout.php">Log out</a>
 
