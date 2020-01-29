@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssfiles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/eprofile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sections/navbar2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/verify.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +138,25 @@
       <workItem from="1580203319190" duration="1681000" />
       <workItem from="1580205128043" duration="1918000" />
       <workItem from="1580207072207" duration="1796000" />
-      <workItem from="1580208882342" duration="921000" />
+      <workItem from="1580208882342" duration="1247000" />
+      <workItem from="1580260478154" duration="1260000" />
+      <workItem from="1580261786342" duration="1752000" />
+      <workItem from="1580263595846" duration="546000" />
+      <workItem from="1580264240520" duration="1798000" />
+      <workItem from="1580266050145" duration="1804000" />
+      <workItem from="1580267865656" duration="115000" />
+      <workItem from="1580268022228" duration="1793000" />
+      <workItem from="1580269827245" duration="1865000" />
+      <workItem from="1580274804164" duration="1798000" />
+      <workItem from="1580276617745" duration="1571000" />
+      <workItem from="1580278465314" duration="2000" />
+      <workItem from="1580279210801" duration="1794000" />
+      <workItem from="1580281020880" duration="1800000" />
+      <workItem from="1580282852306" duration="1800000" />
+      <workItem from="1580284663582" duration="1795000" />
+      <workItem from="1580286471143" duration="1795000" />
+      <workItem from="1580288277726" duration="1794000" />
+      <workItem from="1580290084246" duration="1822000" />
     </task>
     <task id="LOCAL-00001" summary="In Time new file">
       <created>1578462987005</created>
@@ -201,30 +221,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="323" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578994429419" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580208882693">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580292429562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580208882693" />
-    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1580195097082">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580292429562" />
+    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1580287187410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580195097082" />
+    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580287187410" />
     <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog" timestamp="1580178058546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580178058546" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1580183035577">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1580286006155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580183035577" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580286006155" />
     <state x="512" y="340" key="scopes" timestamp="1578994334072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="512" y="340" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1578994334072" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580208134104">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580287181873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580208134104" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580287181873" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

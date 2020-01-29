@@ -18,8 +18,10 @@ if(isset($_POST['update_profile'])){
     $email_add = $_POST ['email_add'];
     $posit = $_POST ['posit'];
     $numb = $_POST ['numb'];
+    $numb2 = $_POST ['numb2'];
     $pass = $_POST ['pass'];
     $con_pass = $_POST ['con_pass'];
+
 
     $proceed = true;
 
@@ -46,7 +48,8 @@ if(isset($_POST['update_profile'])){
                     `birthdate`=:bday,
                     `address`=:address,
                     `city`=:city,
-                    `contact`=:numb 
+                    `contact`=:numb,
+                    `sub_contact`=:numb2 
                     
                     WHERE id =:id';
 
@@ -62,7 +65,8 @@ if(isset($_POST['update_profile'])){
             ':address' => $address,
             ':city' => $city,
             ':numb' => $numb,
-            ':id' => $id
+            ':id' => $id,
+            ':numb2' => $numb2
         ];
 
         $stmt =  $conn->prepare($stmt);
@@ -106,6 +110,7 @@ $userPositionId = $user['pos'];
 $numb = $user ['contact'];
 $pass = $user ['password'];
 $con_pass = $user ['password'];
+$numb2 = $user ['sub_contact']
 
 
 ?>
@@ -124,63 +129,74 @@ $con_pass = $user ['password'];
 echo "
         
 <hr>
+<br>
+<!--
+<div class='container-e'>
 <label class='userdetails'> User Details </label>
+<br><br>
 <form action='eprofile.php' method='post'>
-
-<img src='avatar1.jpg' id='dp' class='editAvatar' alt='dp'>
- 
-
-<label
-    <label class='personal'></label>
-    <table class='table2'>
-         <th>
-                <input type='hidden' placeholder='id' name='id' id='id' value='$userId'>          
-                Username <input type='text' placeholder='Edit your Username' id='username' readonly name='username'  style='width: 100%' value='$userName'/>
-            <br>
-            <br>
-                First name<input type='text' placeholder='Put your First Name' id='fname'  readonly name='fname'  style='width: 100%'  value='$firstname'/>
-            <br>
-            <br>
-                Middle Name<input type='text' placeholder='Put your Middle Name' id='mid_name' readonly name='mid_name'   style='width: 100%' value='$mid_name'/>
-            <br>
-            <br>
-                Last Name<input type='text' placeholder='Put your Last Name' id='last_name' readonly name='last_name' style='width: 100%' value='$last_name'/>
-            <br>
-            <br>  
-                Birthday<input type='date' placeholder='Select Birthdate' id='bday' readonly name='bday'  style='width: 100%' value='$bday'/>
-            <br>
-            <br>
-                Address<input type='text' placeholder='Street/Block/Subdv No.' id='address' readonly name='address'   style='width: 100%' value='$address'/>
-            <br>
-            <br>
-                City<input type='text' placeholder='City' readonly name='city' id='city'   style='width: 100%' value='$city'/>
-       </th>
-
-   
-    </table>
-    
-    
-    <form name='formChange' method='post' action='' onsubmit='return validatePassword()'>
-    <table class='table3'>
-        <th> 
         
-             Password<input type='password' placeholder='Update your Password' readonly name='pass' onsubmit='' id='pass' style='width: 100%'/>
-            <br> <br>
-            Confirm Password<input type='password' placeholder='Re-type your New Password' readonly name='con_pass' id='con_pass' style='width: 100%'/>
-            <br> <br>
+                <input type='hidden' placeholder='id' name='id' id='id' value='$userId'> 
+                
+                <label class='label-e' for='username'> Username: </label>  
+                <div class='col-emp'>       
+                 <input type='text' placeholder='Edit your Username' id='username' readonly name='username'  style='width: 30%' value='$userName'/> 
+                </div>
             
-        </th>
-        </form>
-    
-    <table class='table4'>
-        <th>
-                Email<input type='email' placeholder='Put your Email'  readonly name='email_add' id='email_add' style='width: 100%' value='$email_add'/>
-            <br>
-            <br>";
+                
+                <label class='label-e' for='fname'> First Name: </label>
+                <div class='col-emp'>
+                <input type='text' placeholder='Put your First Name' id='fname'  readonly name='fname'  style='width: 30%'  value='$firstname'/> 
+                </div>
+                
+               
+                <label class='label-e' for='mid_name'> Middle Name: </label>
+                 <div class='col-emp'>
+                <input type='text' placeholder='Put your Middle Name' id='mid_name' readonly name='mid_name'   style='width: 30%' value='$mid_name'/> 
+                </div>
+               
+                
+                <label class='label-e' for='last_name'> Last Name: </label>
+                <div class='col-emp'>
+                <input type='text' placeholder='Put your Last Name' id='last_name' readonly name='last_name' style='width: 30%' value='$last_name'/> 
+                </div>
+                
+               
+                <label class='label-e' for='bday'> Birthday: </label> 
+                 <div class='col-emp'> 
+                <input type='date' placeholder='Select Birthdate' id='bday' readonly name='bday'  style='width: 30%' value='$bday'/> 
+                </div>
+              
+                
+                <label class='label-e' for='address'> Address: </label>
+                <div class='col-emp'>
+                <input type='text' placeholder='Street/Block/Subdv No.' id='address' readonly name='address'   style='width: 30%' value='$address'/> 
+                </div>
+                
+                <label class='label-e' for='city'> City: </label>
+                <div class='col-emp'>
+                <input type='text' placeholder='City' readonly name='city' id='city'   style='width: 30%' value='$city'/> 
+                </div> 
+                
+                 <label class='label-ryt' for='pass'> Password: </label>
+                 <div class='col-ryt'>     
+                 <input type='password' placeholder='Update your Password' readonly name='pass' onsubmit='' id='pass' style='width: 30%'/>    
+                 </div>
+                 
+                 <label class='label-ryt' for = 'con_pass'> Confirm Password: </label>
+                 <div class='col-ryt'>
+                 <input type='password' placeholder='Re-type your New Password' readonly name='con_pass' id='con_pass' style='width: 30%'/>
+                </div>
+                
+                <label class='label-ryt' for='email_add'> Email Address</label>
+                <div class='col-ryt'>
+                <input type='email' placeholder='Put your Email'  readonly name='email_add' id='email_add' style='width: 30%' value='$email_add'/>
+                </div>";
 
 
-
-$positionDropdown = "Position<select id='posit' name='posit' style='width: 100%' required disabled>";
+$positionDropdown = "<label class='label-ryt' for='posit'>Position: </label> 
+                      <div class='col-ryt'> 
+<select id='posit' name='posit' style='width: 30%' required disabled>";
 
 foreach ($positions as $position) {
     $positionId = $position['id'];
@@ -189,21 +205,26 @@ foreach ($positions as $position) {
 
     $positionDropdown .= "<option value='$positionId' $selected>$posName</option>";
 }
-$positionDropdown .= "</select>";
+$positionDropdown .= "</select> </div>";
 echo $positionDropdown;
 
 
 echo "
-            <br>
-            <br>
-                Mobile Number<input type='tel' placeholder='Please put your number' readonly name='numb' id='numb' style='width: 100%' value='$numb' maxlength='11'/>
-            <br>
-        </th> 
-
-        <button class='edit' name='update_profile' onclick='return activateFields()' id='editButton' value='1'> EDIT </button>
+            <label class='label-ryt' for='numb'> Contact Number: </label>
+            <div class='col-ryt'>
+                  <input type='tel' placeholder='Please put your number' readonly name='numb' id='numb' style='width: 30%' value='$numb' maxlength='11'/>
+                  </div>
+                  
+            <label class='label-ryt' for='numb2'> Input another Contact: </label>
+            <div class='col-ryt'>
+                <input type='tel' placeholder='Please put your second number' readonly name='numb2' id='numb2' style='width: 30%' value='$numb2' maxlength='11'/>
+            </div>
         
-            </table>
-</form>";
+        <button class='edit' name='update_profile' onclick='return activateFields()' id='editButton' value='1'> EDIT </button>  
+        
+</form>
+</div>";
+
 
 
 
@@ -226,6 +247,7 @@ echo "
                     email_add: '$email_add',
                     numb: '$numb',
                     con_pass: '$con_pass',
+                    numb2: '$numb2',
                                        
                 };
                 
@@ -233,7 +255,7 @@ echo "
                 function activateFields() {
            
                     let textFields = [
-                        'username', 'fname', 'mid_name', 'last_name', 'bday', 'address', 'city', 'pass', 'email_add', 'numb', 'con_pass'];  
+                        'username', 'fname', 'mid_name', 'last_name', 'bday', 'address', 'city', 'pass', 'email_add', 'numb','numb2', 'con_pass'];  
                     if(editable) { 
                         
                         if(!confirm('Are you sure you want to update this data?')) {
@@ -246,8 +268,8 @@ echo "
                                  }
                                      
                             
-                            textFields.forEach(textField => {
-                                   document.getElementById(textField).value = originalValues[textField];
+                                        textFields.forEach(textField => {
+                                        document.getElementById(textField).value = originalValues[textField];
                                  
                                  
                             });

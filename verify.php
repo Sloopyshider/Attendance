@@ -35,7 +35,7 @@ try{
             $_SESSION['error'] = 'Email not found';
         }
     }
-    catch(PDOException $e){
+    catch(  PDOException $e){
     echo "There is some problem in connection: " . $e->getMessage();
     }
 

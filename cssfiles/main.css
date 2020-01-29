@@ -1,6 +1,7 @@
 
 body{
-    background-color: #565656;
+    background-color: #839b5e;
+    resize: vertical;
 }
 
 .head1
@@ -8,18 +9,20 @@ body{
     height: 100px;
     width: 100%;
     background-color: #87B049;
-    padding-top: 2px;
+    resize: vertical;
 }
 
 .img1
 {
     height: 80px;
     width: 300px;
+    resize: vertical;
 }
 
 .btn {
     position: absolute;
     left: auto;
+    resize: vertical;
 
 }
 
@@ -29,6 +32,7 @@ a {
     padding: 2px 4px;
     text-decoration: none;
     text-transform: uppercase;
+    resize: vertical;
 }
 
 
@@ -41,6 +45,7 @@ a {
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
     top: 0;
+    resize: vertical;
 }
 
 .employeeposition{
@@ -51,6 +56,7 @@ a {
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
     top: 6%;
+    resize: vertical;
 }
 
 .employeeidnumber{
@@ -61,6 +67,7 @@ a {
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
     top: 9%;
+    resize: vertical;
 
 }
 hr {
@@ -68,7 +75,8 @@ hr {
     margin: auto;
     border-style: solid;
     border-width: 4px;
-    border-color: #49B087;
+    border-color: #b04989;
+    resize: vertical;
 }
 
 .vl {
@@ -77,26 +85,28 @@ hr {
     height: 100%;
     left: 25%;
     top: 15%;
+    resize: vertical;
 }
 .footer {
     position: fixed;
     bottom: 5%;
     height: 2%;
     width: 1685px;
-    background-color: #565656;
+    resize: vertical;
 }
 .marq{
     font-size: 22px;
     height: 20px;
-    color: #87B049;
+    color: #0c0c0c;
+    resize: vertical;
 }
 .horizon {
     display: block;
     margin-bottom: 10px;
     border-style: solid;
     border-width: 4px;
-    border-color:  #49B087;
-
+    border-color:  #b04989;
+    resize: vertical;
 }
 .clock {
     padding-top: 10px;
@@ -106,6 +116,7 @@ hr {
     font-weight: bold;
     color:  #87B049;
     font-size: 50px;
+    resize: vertical;
 }
 .labeltimesheet{
     position: absolute;
@@ -113,6 +124,7 @@ hr {
     left: 525px;
     color: #87B049;
     font-weight: bold;
+    resize: vertical;
 }
 .table1 {
     position: absolute;
@@ -122,6 +134,7 @@ hr {
     height: 50%;
     border-collapse: collapse;
     font-weight: bolder;
+    resize: vertical;
 
 }
 th, td{
@@ -199,12 +212,14 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     display: inline-block;
     border: 2px solid;
     background: #f1f1f1;
+    resize: vertical;
 }
 .userdetails{
     position: absolute;
     font-size: 30px;
     left: 44%;
     top: 17%;
+    resize: vertical;
 }
 .personal {
     position: absolute;
@@ -216,9 +231,10 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 }
 .table2 {
     position: absolute;
+    display: table-column;
     background-color: #565656;
     top: 25%;
-    left: 25%;
+    left: 10%;
 }
 .account {
     position: absolute;
@@ -228,12 +244,6 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     left: 56%;
     top:33%;
 }
-.table3 {
-    position: absolute;
-    background-color: #565656;
-    top: 25%;
-    left: 55%;
-}
 .compinfo {
     position: absolute;
     border: 2px black groove;
@@ -242,16 +252,10 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     left: 56%;
     bottom: 30%;
 }
-.table4 {
-    position: absolute;
-    background-color: #565656;
-    bottom: 11%;
-    left: 56%;
-}
 .edit{
     position: absolute;
     border: 2px black groove;
-        background-color: #87B049;
+    background-color: #87B049;
     font-size: 20px;
     left: 46%;
     bottom: 30%;
@@ -311,8 +315,9 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 .avatar {
 
     float: right;
-    padding-right: 460px;
-    bottom: 50px;
+    padding-right: 450px;
+    top: 50px;
+
 
 }
 .editAvatar{
@@ -321,5 +326,56 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     width: 250px;
     padding-left: 3%;
     padding-top: 7%;
+    resize: vertical;
 }
+{
+box-sizing: border-box;
+}
+.container-e{
+    border-radius: 5px;
+    background-color: #4989b0;
+    padding-left: 20%;
+
+}
+.label-e{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    width: 75%;
+    margin-top: 2px;
+}
+.col-emp{
+    width: 80%;
+    margin-top: 5px;
+    padding-left: 60px;
+    border-radius: 5px;
+}
+.container-ryt{
+    border-radius: 5px;
+    background-color: #4989b0;
+    padding-left: 20%;
+
+}
+.label-ryt{
+    padding: 12px 12px 12px 0;
+    width: 55%;
+    float: right;
+    margin-top: 2px;
+}
+.col-ryt{
+    width: 50%;
+    margin-top: 5px;
+    padding-right: 60px;
+    float: right;
+}
+
+
+@media screen and (max-width: 600px) {
+    .avatar, .employeeidnumber, .employeename, .employeeposition, .head1, .hr{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
 
