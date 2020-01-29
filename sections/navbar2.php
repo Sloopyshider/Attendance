@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="cssfiles/main.css" rel="stylesheet" type="text/css">
+    <link href="cssfile/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -11,7 +11,7 @@
 
 
 <div class="head1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
     <img class="img1" src="sections/companylogogreen.jpg" alt="comp">
     <img src="avatar1.jpg" width="80px" height="80px" class="avatar">
 
@@ -49,6 +49,7 @@
     <img src="down2.jpg" width="22px" height="18px" onclick="myFunction()" class="dropbtn">
     <div id="myDropdown" class="dropdown-content">
     <a href="intime.php">Attendance</a>
+    <a href="intime.php ">Record</a>
     <a href="eprofile.php">Employee Profile</a>
     <a href="sections/logout.php">Log out</a>
 
