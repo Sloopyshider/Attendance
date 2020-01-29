@@ -12,12 +12,9 @@ $timein1 = date('H:i:s');
 
 /*Pagination Here*/
 
-$limit = isset($_POST["limit-records"]) ? $_POST["limit-records"] : 5000;
-$page = isset($_GET['page']) ? $_GET['page'] : 1;
-$start = ($page - 1) * $limit;
 
 
-$stmt = $conn->prepare("SELECT * FROM timeattend WHERE users_id=:users_id LIMIT 10");
+$stmt = $conn->prepare("select *from timeattend WHERE users_id = 2 and datetd =CURRENT_DATE ORDER BY users_id DESC LIMIT 1");
 $stmt->execute(['users_id' => $_SESSION['user']]);
 
 
@@ -158,8 +155,7 @@ $sqllate = $conn->query("SELECT COUNT(timein) FROM timeattend WHERE timein >= '0
 
     <title> Elite Attendance Monitoring </title>
     <script type="text/javascript" src="cssfiles/main.js"></script>
-
-    <link href="/attendance/cssfiles/main.css" rel="stylesheet" type="text/css">
+    <link href="Attendance/cssfiles/main.css" rel="stylesheet" type="text/css">
 
     <script>       var d,h,m,s,animate;
 
@@ -228,55 +224,6 @@ include "sections/navbar2.php";
 
 
 
-<?php
-
-define("ROW_PER_PAGE",3);
-
-
-$hi = $_SESSION['user'];
-$search_keyword = '';
-if(!empty($_POST['search']['keyword'])) {
-    $search_keyword = $_POST['search']['keyword'];
-}
-$sql = "SELECT * FROM timeattend WHERE (datetd LIKE :keyword OR timein LIKE :keyword OR timeout LIKE :keyword) AND users_id = $hi ORDER BY datetd DESC ";
-
-
-/* Pagination Code starts */
-$per_page_html = '';
-$page = 1;
-$start=0;
-if(!empty($_POST["page"])) {
-    $page = $_POST["page"];
-    $start=($page-1) * ROW_PER_PAGE;
-}
-$limit=" limit " . $start . "," . ROW_PER_PAGE;
-$pagination_statement = $conn->prepare($sql);
-$pagination_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
-$pagination_statement->execute();
-
-
-$row_count = $pagination_statement->rowCount();
-if(!empty($row_count)){
-    $per_page_html .= "<div style='text-align:center;margin:20px 0px;'>";
-    $page_count=ceil($row_count/ROW_PER_PAGE);
-    if($page_count>1) {
-        for($i=1;$i<=$page_count;$i++){
-            if($i==$page){
-                $per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page current" />';
-            } else {
-                $per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page" />';
-            }
-        }
-    }
-    $per_page_html .= "</div>";
-}
-
-$query = $sql.$limit;
-$pdo_statement = $conn->prepare($query);
-$pdo_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
-$pdo_statement->execute();
-$result = $pdo_statement->fetchAll();
-?>
 
 
 
@@ -295,11 +242,10 @@ echo '
 
 
 
-<table class="table1" style="bottom: 20%">
+<table class="table1">
     <tr>
-        <th width="150px">
-        Date</th>
-        <th width="150px">Day of the Week</th>
+        <th>Date</th>
+        <th width="70px">Day of the Week</th>
         <th width="150px">Time in</th>
         <th width="150px">Time out</th>
         <th width="150px">Total Hours</th>
@@ -320,18 +266,21 @@ echo '
 try{
 
     foreach($attendances as $attendance) {
-        echo "<tr>";
+        echo "<tr'>";
 
-        echo "
+        echo " 
         <td>".$attendance['date']."</td>
         <td>".$attendance['day']."</td>
         <td>".$attendance['timeIn']."</td>
         <td>".$attendance['timeOut']."</td>
         <td>".$attendance['total']." hr/s</td>
         <td>".$attendance['status']."</td>
+        
     ";
 
-        echo "</tr>";
+        echo "</tr> 
+
+";
     }
 
 //    foreach($stmt as $row){
@@ -417,16 +366,14 @@ try{
 //	        										</tr>
 //	        								";
 //    }
-
 }
 catch(PDOException $e){
     echo "There is some problem in connection: " . $e->getMessage();
 }
 
 
-
 echo '
-   
+</table>
 ';
 
 
