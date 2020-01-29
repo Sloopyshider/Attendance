@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cssfiles/user.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updateprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cssfiles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/eprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intime.php" beforeDir="false" afterPath="$PROJECT_DIR$/intime.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/connect2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/connect2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/footer2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/navbar2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VMYbvOW8xCtyypHDW63piAnbVr" />
@@ -60,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AttendanceElite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -122,6 +120,23 @@
       <workItem from="1579049933230" duration="3057000" />
       <workItem from="1579054782225" duration="23197000" />
       <workItem from="1579137353829" duration="18635000" />
+      <workItem from="1580177926196" duration="51000" />
+      <workItem from="1580177990966" duration="1794000" />
+      <workItem from="1580179805379" duration="1876000" />
+      <workItem from="1580181693070" duration="2349000" />
+      <workItem from="1580186327132" duration="1816000" />
+      <workItem from="1580188170895" duration="1820000" />
+      <workItem from="1580190082918" duration="1796000" />
+      <workItem from="1580191892738" duration="1794000" />
+      <workItem from="1580193712411" duration="1795000" />
+      <workItem from="1580195523384" duration="1796000" />
+      <workItem from="1580197854566" duration="1797000" />
+      <workItem from="1580199664149" duration="1802000" />
+      <workItem from="1580201498460" duration="1808000" />
+      <workItem from="1580203319190" duration="1681000" />
+      <workItem from="1580205128043" duration="1918000" />
+      <workItem from="1580207072207" duration="1796000" />
+      <workItem from="1580208882342" duration="921000" />
     </task>
     <task id="LOCAL-00001" summary="In Time new file">
       <created>1578462987005</created>
@@ -166,10 +181,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578988314763" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1579137935721">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1580177967308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579137935721" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580177967308" />
+    <state x="669" y="235" key="MultipleFileMergeDialog" timestamp="1580178063961">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="235" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580178063961" />
     <state x="776" y="442" key="NewPhpFileDialog" timestamp="1579150896505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -182,22 +201,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="323" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578994429419" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1579137546510">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580208882693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579137546510" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1579068815343">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580208882693" />
+    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1580195097082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579068815343" />
+    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580195097082" />
+    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog" timestamp="1580178058546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580178058546" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1580183035577">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580183035577" />
     <state x="512" y="340" key="scopes" timestamp="1578994334072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="512" y="340" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1578994334072" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579072803859">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580208134104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579072803859" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580208134104" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

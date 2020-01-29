@@ -3,8 +3,6 @@
     <meta charset="UTF-8">
 
     <title> Elite Attendance Monitoring </title>
-    <script type="text/javascript" src="includes/EmployeeDash.js"></script>
-    <link href="../cssfiles/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <div class="footer">
