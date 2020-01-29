@@ -1,15 +1,8 @@
-
 <?php
-
 include "sections/session.php";
-
-
-
-
 ?>
 
 <?php
-
 if(!isset($_SESSION['user'])){
     header('location: index.php');
 }
@@ -17,8 +10,16 @@ if(!isset($_SESSION['user'])){
 date_default_timezone_set('Asia/Manila');
 $timein1 = date('H:i:s');
 
-$stmt = $conn->prepare("SELECT * FROM timeattend WHERE users_id=:users_id ");
+/*Pagination Here*/
+
+$limit = isset($_POST["limit-records"]) ? $_POST["limit-records"] : 5000;
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+$start = ($page - 1) * $limit;
+
+
+$stmt = $conn->prepare("SELECT * FROM timeattend WHERE users_id=:users_id LIMIT 10");
 $stmt->execute(['users_id' => $_SESSION['user']]);
+
 
 $conn = $pdo->open();
 
@@ -26,7 +27,7 @@ $status1 = "Late";
 $status2 = "Present";
 $status3 = "Absent";
 
-$stmt1 = $conn->prepare("SELECT * FROM employee   WHERE id=:id");
+$stmt1 = $conn->prepare("SELECT * FROM employee WHERE id=:id");
 $stmt1->execute(['id'=>$_SESSION['user']]);
 
 $attendances = [];
@@ -45,24 +46,40 @@ foreach ($stmt as $row) {
 
 /*Creating the 9am basetime here*/
 
-    $basetime = strtotime('9:00:00 am');
+    $basetime = strtotime('09:00:00 am');
     $basetime1 = date("H:i:s",$basetime);
+
+
     $basetimecreate = date_create($basetime1);
 
 /*ends here*/
-
-/*Create a difference between 9am - time in */
+/*Create a difference between 9am - time in $intminval = date_interval_format($intmin,'%h%i%s');*/
     $time1 = date_create($timein);
-    $intmin = date_diff($time1,$basetimecreate);
-/*Created the difference*/
+//    $intmin = date_diff($time1,$basetimecreate);
+//
+//    $ints = $intmin->format("%d");
+//
+//
+//    $ints1 =  strtotime($ints);
+//    $ints2 = date('H:i:s',$ints1);
+//    $ints3 = date_create($ints2);
+    /*Created the difference*/
 
 
+    $int = date('H:i:s',1580174100);
+    $int1 = date_create($int);
+    $int2 = date_diff($time1,$int1);
 
+    $int3 = $int2->format("%h");
+
+    $int4 = date_create($int3);
 
     $time2 = date_create($timeout);
-    $interval = date_diff($basetimecreate,$time2);
+    $interval = date_diff($int1,$time2);
 
-
+//    $ge = strtotime("9:15:00");
+//    var_dump($ge);
+//    exit();
 
     $date = date('M. d, Y', strtotime($date1));
     $dayOfTheWeek = date('l', strtotime($date));
@@ -72,13 +89,13 @@ foreach ($stmt as $row) {
 
     $total = "";
 
-    if ($total > $timein)
+    if ($total < $timein)
     {
-        $total =  $interval->format("%h hr/s");
+        $total =  $interval->format("%h");
 
     }
-    elseif ($total < $timeout){
-        $total =  $interval->format("%h hrs");
+    elseif ($total > $timeout){
+        $total =  $interval->format("%h");
 
     }
     else
@@ -87,10 +104,13 @@ foreach ($stmt as $row) {
     }
 
 
+    $hello = number_format($total);
+    $hello1 = number_format($int3);
+    $hello2 = $total - $int3 ;
+
 //    if($savedTimeIn && $savedTimeOut) {
 //
 //    }
-
 
     $late = strtotime('9:15:01 am');
     $sta = strtotime($timein);
@@ -108,12 +128,9 @@ foreach ($stmt as $row) {
             'day' => $dayOfTheWeek,
             'timeIn' => $savedTimeIn,
             'timeOut' => $savedTimeOut,
-            'total' => $total,
+            'total' => $hello2,
             'status' => $status
     ];
-
-//    $total =
-
 
 }
 
@@ -140,9 +157,9 @@ $sqllate = $conn->query("SELECT COUNT(timein) FROM timeattend WHERE timein >= '0
     <meta charset="UTF-8">
 
     <title> Elite Attendance Monitoring </title>
-    <script type="text/javascript" src="cssfiles/main1.js"></script>
+    <script type="text/javascript" src="cssfiles/main.js"></script>
 
-    <link href="cssfiles/main.css" rel="stylesheet" type="text/css">
+    <link href="/attendance/cssfiles/main.css" rel="stylesheet" type="text/css">
 
     <script>       var d,h,m,s,animate;
 
@@ -205,32 +222,77 @@ $sqllate = $conn->query("SELECT COUNT(timein) FROM timeattend WHERE timein >= '0
 include "sections/navbar2.php";
 ?>
 
-<body value="1">
+
+<body>
 <hr>
+
 
 
 <?php
 
+define("ROW_PER_PAGE",3);
 
 
-//date_default_timezone_set('Asia/Singapore');
-//    $timein = date('H:i:s');
-
-//    $row = date_format($date,'l');
-//    $date = date_create($row['datetd']);
-
-
-
-//if(isset($_SESSION['user'])) {
-//
-//    $stmt = $conn->prepare("SELECT * FROM timeattend WHERE users_id=:users_id ");
-//    $stmt->execute(['users_id' => $_SESSION['user']]);
-//
-//};
+$hi = $_SESSION['user'];
+$search_keyword = '';
+if(!empty($_POST['search']['keyword'])) {
+    $search_keyword = $_POST['search']['keyword'];
+}
+$sql = "SELECT * FROM timeattend WHERE (datetd LIKE :keyword OR timein LIKE :keyword OR timeout LIKE :keyword) AND users_id = $hi ORDER BY datetd DESC ";
 
 
+/* Pagination Code starts */
+$per_page_html = '';
+$page = 1;
+$start=0;
+if(!empty($_POST["page"])) {
+    $page = $_POST["page"];
+    $start=($page-1) * ROW_PER_PAGE;
+}
+$limit=" limit " . $start . "," . ROW_PER_PAGE;
+$pagination_statement = $conn->prepare($sql);
+$pagination_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
+$pagination_statement->execute();
+
+
+$row_count = $pagination_statement->rowCount();
+if(!empty($row_count)){
+    $per_page_html .= "<div style='text-align:center;margin:20px 0px;'>";
+    $page_count=ceil($row_count/ROW_PER_PAGE);
+    if($page_count>1) {
+        for($i=1;$i<=$page_count;$i++){
+            if($i==$page){
+                $per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page current" />';
+            } else {
+                $per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page" />';
+            }
+        }
+    }
+    $per_page_html .= "</div>";
+}
+
+$query = $sql.$limit;
+$pdo_statement = $conn->prepare($query);
+$pdo_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
+$pdo_statement->execute();
+$result = $pdo_statement->fetchAll();
+?>
+
+
+
+
+
+
+
+
+<?php
 
 echo ' 
+
+
+
+
+
 
 
 <table class="table1" style="bottom: 20%">
@@ -240,7 +302,7 @@ echo '
         <th width="150px">Day of the Week</th>
         <th width="150px">Time in</th>
         <th width="150px">Time out</th>
-        <th width="150px">Total</th>
+        <th width="150px">Total Hours</th>
         <th width="150px">Status</th>
 
     </tr>
@@ -265,7 +327,7 @@ try{
         <td>".$attendance['day']."</td>
         <td>".$attendance['timeIn']."</td>
         <td>".$attendance['timeOut']."</td>
-        <td>".$attendance['total']."</td>
+        <td>".$attendance['total']." hr/s</td>
         <td>".$attendance['status']."</td>
     ";
 
@@ -388,7 +450,6 @@ echo '
 
 <label class="labelabsent"> No. of Absents: </label>
 
-<label class="labeltimesheet"> Time Sheet </label>
 <br>
 <br>
 <br>
@@ -405,9 +466,9 @@ echo '
 </label>
 <br>
 
-'?>
-&nbsp;
-<!--Time In-->
+'
+?>
+
 
 <!--Controller 2-->
 
@@ -420,8 +481,10 @@ $datetoday1 = date("Y-m-d");
 $timer = date('H:i:s');
 
 
+
 echo ' 
  
+
    
  
  
