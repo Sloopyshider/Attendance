@@ -14,7 +14,7 @@ $timein1 = date('H:i:s');
 
 
 
-$stmt = $conn->prepare("select *from timeattend WHERE users_id = 2 and datetd =CURRENT_DATE ORDER BY users_id DESC LIMIT 1");
+$stmt = $conn->prepare("select *from timeattend WHERE users_id = :users_id and datetd =CURRENT_DATE ORDER BY users_id DESC LIMIT 1");
 $stmt->execute(['users_id' => $_SESSION['user']]);
 
 
