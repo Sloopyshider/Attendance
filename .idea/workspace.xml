@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/bootstrap/css/bootstrap-responsive.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/bootstrap/css/bootstrap-responsive.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_new_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cssfiles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/eprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intime.php" beforeDir="false" afterPath="$PROJECT_DIR$/intime.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/footer2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/navbar2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/updatepass.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -77,17 +71,18 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Attendance\includes" />
-      <recent name="C:\xampp\htdocs\Attendance" />
-      <recent name="C:\xampp\htdocs\Attendance\admin" />
-      <recent name="C:\xampp\htdocs\Attendance\sections" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Attendance\sections" />
       <recent name="C:\xampp\htdocs\Attendance" />
       <recent name="C:\xampp\htdocs\Attendance\cssfiles" />
       <recent name="C:\xampp\htdocs\Attendance\admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Private\htdocs\Attendance\admin" />
+      <recent name="C:\xampp\htdocs\Attendance\includes" />
+      <recent name="C:\xampp\htdocs\Attendance" />
+      <recent name="C:\xampp\htdocs\Attendance\admin" />
+      <recent name="C:\xampp\htdocs\Attendance\sections" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -193,7 +188,12 @@
       <workItem from="1580451205754" duration="1801000" />
       <workItem from="1580453142333" duration="1903000" />
       <workItem from="1580455056215" duration="1783000" />
-      <workItem from="1580456911249" duration="784000" />
+      <workItem from="1580456911249" duration="2070000" />
+      <workItem from="1580460071394" duration="1794000" />
+      <workItem from="1580461880274" duration="1796000" />
+      <workItem from="1580463687387" duration="1775000" />
+      <workItem from="1580466150959" duration="1794000" />
+      <workItem from="1580467957694" duration="268000" />
     </task>
     <task id="LOCAL-00001" summary="In Time new file">
       <created>1578462987005</created>
@@ -262,14 +262,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="323" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578994429419" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580456917888">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580467957455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580456917888" />
-    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1580437595073">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580467957455" />
+    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1580458393535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580437595073" />
+    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580458393535" />
     <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog" timestamp="1580178058546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -282,10 +282,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="512" y="340" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1578994334072" />
-    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup" timestamp="1580450829752">
+    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup" timestamp="1580460185361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580450829751" />
+    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580460185361" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

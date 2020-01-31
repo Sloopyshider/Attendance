@@ -82,7 +82,18 @@ if(isset($_['insert']))
         echo 'Enter The User Data To Insert';
     }  else {
 
-        $insertStmt = $con->prepare('INSERT INTO timeattend(users_id,timein,timeout,datetd,total) VALUES(:users_id,:timein,:timeout,:datetd,:total)');
+        $insertStmt = $con->prepare('INSERT INTO timeattend(
+                                                            users_id,
+                                                            timein,
+                                                            timeout,
+                                                            datetd,
+                                                            total)
+                                                            
+                                            VALUES(:users_id,
+                                            :timein,
+                                            :timeout,
+                                            :datetd,
+                                            :total)');
         $insertStmt->execute(array(
             ':users_id'=> $data[0],
             ':timein'=> $data[1],
