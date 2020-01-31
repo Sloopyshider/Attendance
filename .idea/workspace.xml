@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/bootstrap/css/bootstrap-responsive.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/bootstrap/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_new_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssfiles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/eprofile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intime.php" beforeDir="false" afterPath="$PROJECT_DIR$/intime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/footer2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sections/navbar2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/updatepass.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +144,56 @@
       <workItem from="1580203319190" duration="1681000" />
       <workItem from="1580205128043" duration="1918000" />
       <workItem from="1580207072207" duration="1796000" />
-      <workItem from="1580208882342" duration="921000" />
+      <workItem from="1580208882342" duration="1247000" />
+      <workItem from="1580260478154" duration="1260000" />
+      <workItem from="1580261786342" duration="1752000" />
+      <workItem from="1580263595846" duration="546000" />
+      <workItem from="1580264240520" duration="1798000" />
+      <workItem from="1580266050145" duration="1804000" />
+      <workItem from="1580267865656" duration="115000" />
+      <workItem from="1580268022228" duration="1793000" />
+      <workItem from="1580269827245" duration="1865000" />
+      <workItem from="1580274804164" duration="1798000" />
+      <workItem from="1580276617745" duration="1571000" />
+      <workItem from="1580278465314" duration="2000" />
+      <workItem from="1580279210801" duration="1794000" />
+      <workItem from="1580281020880" duration="1800000" />
+      <workItem from="1580282852306" duration="1800000" />
+      <workItem from="1580284663582" duration="1795000" />
+      <workItem from="1580286471143" duration="1795000" />
+      <workItem from="1580288277726" duration="1794000" />
+      <workItem from="1580290084246" duration="1822000" />
+      <workItem from="1580292270203" duration="1619000" />
+      <workItem from="1580294619879" duration="373000" />
+      <workItem from="1580348136755" duration="1038000" />
+      <workItem from="1580349184826" duration="2248000" />
+      <workItem from="1580351529210" duration="1797000" />
+      <workItem from="1580353337241" duration="1795000" />
+      <workItem from="1580355174408" duration="1795000" />
+      <workItem from="1580356980698" duration="865000" />
+      <workItem from="1580360353708" duration="1794000" />
+      <workItem from="1580362162525" duration="1717000" />
+      <workItem from="1580363968457" duration="1794000" />
+      <workItem from="1580365775123" duration="1794000" />
+      <workItem from="1580367580622" duration="1795000" />
+      <workItem from="1580369390946" duration="1797000" />
+      <workItem from="1580371199988" duration="885000" />
+      <workItem from="1580372159819" duration="1793000" />
+      <workItem from="1580373967255" duration="1715000" />
+      <workItem from="1580375788234" duration="1796000" />
+      <workItem from="1580377596132" duration="1760000" />
+      <workItem from="1580433309660" duration="1775000" />
+      <workItem from="1580435096018" duration="1819000" />
+      <workItem from="1580436928724" duration="1673000" />
+      <workItem from="1580438809196" duration="1797000" />
+      <workItem from="1580440623915" duration="1842000" />
+      <workItem from="1580442494530" duration="2725000" />
+      <workItem from="1580447575171" duration="1811000" />
+      <workItem from="1580449399865" duration="1794000" />
+      <workItem from="1580451205754" duration="1801000" />
+      <workItem from="1580453142333" duration="1903000" />
+      <workItem from="1580455056215" duration="1783000" />
+      <workItem from="1580456911249" duration="784000" />
     </task>
     <task id="LOCAL-00001" summary="In Time new file">
       <created>1578462987005</created>
@@ -181,6 +238,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578988314763" />
+    <state x="640" y="245" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580349170471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="245" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580349170471" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1580177967308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -201,30 +262,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="323" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578994429419" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580208882693">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580456917888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580208882693" />
-    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1580195097082">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580456917888" />
+    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1580437595073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580195097082" />
+    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580437595073" />
     <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog" timestamp="1580178058546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580178058546" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1580183035577">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1580436807731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580183035577" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580436807731" />
     <state x="512" y="340" key="scopes" timestamp="1578994334072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="512" y="340" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1578994334072" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580208134104">
+    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup" timestamp="1580450829752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580208134104" />
+    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580450829751" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

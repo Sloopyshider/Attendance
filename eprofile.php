@@ -14,12 +14,13 @@ if(isset($_POST['update_profile'])){
     $last_name = $_POST ['last_name'];
     $bday = $_POST ['bday'];
     $address = $_POST ['address'];
-    $city = $_POST ['city'];
     $email_add = $_POST ['email_add'];
     $posit = $_POST ['posit'];
     $numb = $_POST ['numb'];
+    $numb2 = $_POST ['numb2'];
     $pass = $_POST ['pass'];
     $con_pass = $_POST ['con_pass'];
+
 
     $proceed = true;
 
@@ -45,8 +46,8 @@ if(isset($_POST['update_profile'])){
                     `pos`=:posit,
                     `birthdate`=:bday,
                     `address`=:address,
-                    `city`=:city,
-                    `contact`=:numb 
+                    `contact`=:numb,
+                    `sub_contact`=:numb2 
                     
                     WHERE id =:id';
 
@@ -60,20 +61,14 @@ if(isset($_POST['update_profile'])){
             ':posit' => $posit,
             ':bday' => $bday,
             ':address' => $address,
-            ':city' => $city,
             ':numb' => $numb,
-            ':id' => $id
+            ':id' => $id,
+            ':numb2' => $numb2
         ];
 
         $stmt =  $conn->prepare($stmt);
         $pdoExc =  $stmt->execute($parameters);
-
-//        $pass = password_hash('$pass', PASSWORD_DEFAULT);
     }
-
-
-
-
 
 }
 
@@ -100,87 +95,55 @@ $mid_name = $user ['midname'];
 $last_name = $user ['lastname'];
 $bday = $user ['birthdate'];
 $address = $user ['address'];
-$city = $user ['city'];
 $email_add = $user ['email'];
 $userPositionId = $user['pos'];
 $numb = $user ['contact'];
 $pass = $user ['password'];
 $con_pass = $user ['password'];
+$numb2 = $user ['sub_contact'];
 
 
 ?>
 
     <head>
-
         <title> Employee Profile </title>
         <link href='cssfiles/main.css' rel='stylesheet' type='text/css'>
+
     </head>
-    <body>
+<body>
 
 <?php
 
+echo"
 
 
-echo "
         
 <hr>
-<label class='userdetails'> User Details </label>
+<br>
+
 <form action='eprofile.php' method='post'>
-
-<img src='avatar1.jpg' id='dp' class='editAvatar' alt='dp'>
- 
-
-<label
-    <label class='personal'></label>
-    <table class='table2'>
-         <th>
-                <input type='hidden' placeholder='id' name='id' id='id' value='$userId'>          
-                Username <input type='text' placeholder='Edit your Username' id='username' readonly name='username'  style='width: 100%' value='$userName'/>
-            <br>
-            <br>
-                First name<input type='text' placeholder='Put your First Name' id='fname'  readonly name='fname'  style='width: 100%'  value='$firstname'/>
-            <br>
-            <br>
-                Middle Name<input type='text' placeholder='Put your Middle Name' id='mid_name' readonly name='mid_name'   style='width: 100%' value='$mid_name'/>
-            <br>
-            <br>
-                Last Name<input type='text' placeholder='Put your Last Name' id='last_name' readonly name='last_name' style='width: 100%' value='$last_name'/>
-            <br>
-            <br>  
-                Birthday<input type='date' placeholder='Select Birthdate' id='bday' readonly name='bday'  style='width: 100%' value='$bday'/>
-            <br>
-            <br>
-                Address<input type='text' placeholder='Street/Block/Subdv No.' id='address' readonly name='address'   style='width: 100%' value='$address'/>
-            <br>
-            <br>
-                City<input type='text' placeholder='City' readonly name='city' id='city'   style='width: 100%' value='$city'/>
-       </th>
-
+<td>
+<div style='padding-top: 50px'>
+    <input type='hidden' placeholder='id' name='id' id='id' value='$userId'> 
    
-    </table>
-    
-    
-    <form name='formChange' method='post' action='' onsubmit='return validatePassword()'>
-    <table class='table3'>
-        <th> 
-        
-             Password<input type='password' placeholder='Update your Password' readonly name='pass' onsubmit='' id='pass' style='width: 100%'/>
-            <br> <br>
-            Confirm Password<input type='password' placeholder='Re-type your New Password' readonly name='con_pass' id='con_pass' style='width: 100%'/>
-            <br> <br>
-            
-        </th>
-        </form>
-    
-    <table class='table4'>
-        <th>
-                Email<input type='email' placeholder='Put your Email'  readonly name='email_add' id='email_add' style='width: 100%' value='$email_add'/>
-            <br>
-            <br>";
+    <label style='padding-left: 362px'>Username:</label><input type='text' placeholder='Edit your Username' id='username' readonly name='username' pattern='[a-z]{2,}'  style='width: 20%' value='$userName'/>
+     <label style='margin-left: 165px'></label>E-mail:<input type='email' placeholder='Put your Email'  readonly name='email_add' id='email_add' style='width: 20%' value='$email_add'/> 
+    <br><br>
+    <label style='padding-left: 355px'>First Name:</label><input type='text' placeholder='Put your First Name' id='fname'  readonly name='fname' style='width: 20%' value='$firstname'/>
+    <label style='margin-left: 148px'></label>Password:<input type='password' placeholder='Update your Password' readonly name='pass' id='pass' style='width: 20%'/>
+    <br><br>
+    <label style='margin-left: 340px'>Middle Name:</label><input type='text' placeholder='Put your Middle Name' id='mid_name' readonly name='mid_name'   style='width: 20%' value='$mid_name'/>
+    <label style='margin-left: 90px'>Confirm Password:</label><input type='password' placeholder='Re-type your New Password' readonly name='con_pass' id='con_pass' style='width: 20%'/>
+    <br><br>
+    <label style='padding-left: 358px'>Last Name:</label><input type='text' placeholder='Edit your Last name' id='last_name' readonly name='last_name'  style='width: 20%' value='$last_name'/>
+    <label style='margin-left: 105px'>Contact Number:</label><input type='tel' placeholder='Please put your number' readonly name='numb' id='numb' style='width: 20%' value='$numb' maxlength='11'/>
+    <br><br>
+    <label style='padding-left: 372px'>Birthday:</label><input type='date' placeholder='Select Birthdate' id='bday' readonly name='bday' pattern='[A-Za-z]' style='width:20%' value='$bday'/>
+    <label style='margin-left: 82px'>Emergency Number:</label></label><input type='tel' placeholder='Please put a Emergency Number' readonly name='numb2' id='numb2' style='width: 20%;' value='$numb2' maxlength='11'/>
+    <br><br>
+    <label style='padding-left: 375px'>Address:</label><input type='text' placeholder='Street/Block/Subdv No.' id='address' readonly name='address'   style='width: 20%' value='$address'/>";
 
-
-
-$positionDropdown = "Position<select id='posit' name='posit' style='width: 100%' required disabled>";
+$positionDropdown = "<label style='margin-left: 165px'>Position:</label><select id='posit' name='posit' style='width: 20%' required disabled>";
 
 foreach ($positions as $position) {
     $positionId = $position['id'];
@@ -193,25 +156,23 @@ $positionDropdown .= "</select>";
 echo $positionDropdown;
 
 
-echo "
-            <br>
-            <br>
-                Mobile Number<input type='tel' placeholder='Please put your number' readonly name='numb' id='numb' style='width: 100%' value='$numb' maxlength='11'/>
-            <br>
-        </th> 
+echo"
+<button class='edit' name='update_profile' onclick='return activateFields()' id='editButton' value='1'> EDIT </button>
+<button type='reset' class='adduser1' name='addUser' id='addUser'> ADD USER </button> 
 
-        <button class='edit' name='update_profile' onclick='return activateFields()' id='editButton' value='1'> EDIT </button>
-        
-            </table>
-</form>";
-
-
+</div>
+</td>
+</table>
+</form>
+";
 
 
 echo "
             <script type='text/javascript'>
            
+               
                 
+        
                 let editable = false;
                 
                 let originalValues = {
@@ -221,11 +182,11 @@ echo "
                     last_name: '$last_name',
                     bday: '$bday',
                     address: '$address',
-                    city: '$city',
                     pass: '$pass',
                     email_add: '$email_add',
                     numb: '$numb',
                     con_pass: '$con_pass',
+                    numb2: '$numb2',
                                        
                 };
                 
@@ -233,7 +194,7 @@ echo "
                 function activateFields() {
            
                     let textFields = [
-                        'username', 'fname', 'mid_name', 'last_name', 'bday', 'address', 'city', 'pass', 'email_add', 'numb', 'con_pass'];  
+                        'username', 'fname', 'mid_name', 'last_name', 'bday', 'address', 'pass', 'email_add', 'numb','numb2', 'con_pass'];  
                     if(editable) { 
                         
                         if(!confirm('Are you sure you want to update this data?')) {
@@ -244,12 +205,8 @@ echo "
                                      alert('password do not match');
                                     return originalValues;
                                  }
-                                     
-                            
-                            textFields.forEach(textField => {
-                                   document.getElementById(textField).value = originalValues[textField];
-                                 
-                                 
+                                        textFields.forEach(textField => {
+                                        document.getElementById(textField).value = originalValues[textField];                                     
                             });
                             return false;
                         }
@@ -259,16 +216,17 @@ echo "
                                 document.getElementById(textField).readOnly = false;
                                 
                                    
-                        });
-                           
+                        });                         
                             document.getElementById('posit').disabled = false;
-                            document.getElementById('editButton').innerHTML = 'Update';  
-                            
-                            
-                            
+                            document.getElementById('editButton').innerHTML = 'Update'; 
                             editable = true;
                             return false;         
                         }
+                        
+                        document.getElementById('addUser').onclick = function() {
+                        location.href = 'add_user.php';
+                        };
+                        
                    
                     </script>
         ";

@@ -1,6 +1,7 @@
 
 body{
-    background-color: #565656;
+    background-color: #7d7d7d;
+    resize: vertical;
 }
 
 .head1
@@ -8,29 +9,22 @@ body{
     height: 100px;
     width: 100%;
     background-color: #87B049;
-    padding-top: 2px;
+
 }
 
 .img1
 {
     height: 80px;
     width: 300px;
+
 }
 
 .btn {
     position: absolute;
     left: auto;
+    resize: vertical;
 
 }
-
-a {
-    background-color: black;
-    color: white;
-    padding: 2px 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
 
 
 .employeename{
@@ -41,6 +35,7 @@ a {
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
     top: 0;
+    resize: vertical;
 }
 
 .employeeposition{
@@ -51,6 +46,7 @@ a {
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
     top: 6%;
+    resize: vertical;
 }
 
 .employeeidnumber{
@@ -61,6 +57,7 @@ a {
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
     top: 9%;
+    resize: vertical;
 
 }
 hr {
@@ -68,35 +65,37 @@ hr {
     margin: auto;
     border-style: solid;
     border-width: 4px;
-    border-color: #49B087;
+    border-color: #b04989;
+    resize: vertical;
 }
 
 .vl {
     position: absolute;
-    border-left: 6px solid #49B087;
-    height: 100%;
-    left: 25%;
-    top: 15%;
+    border-left: 6px solid #b04989;
+    height: 55%;
+    left: 50%;
+    top: 113px;
+
 }
-.footer {
+.footer1 {
     position: fixed;
-    bottom: 5%;
-    height: 2%;
-    width: 1685px;
-    background-color: #565656;
+    bottom: 3%;
+    width: 100%;
+    resize: vertical;
 }
 .marq{
     font-size: 22px;
     height: 20px;
-    color: #87B049;
+    color: #0c0c0c;
+    resize: vertical;
 }
 .horizon {
     display: block;
     margin-bottom: 10px;
     border-style: solid;
     border-width: 4px;
-    border-color:  #49B087;
-
+    border-color:  #b04989;
+    resize: vertical;
 }
 .clock {
     padding-top: 10px;
@@ -106,6 +105,7 @@ hr {
     font-weight: bold;
     color:  #87B049;
     font-size: 50px;
+    resize: vertical;
 }
 .labeltimesheet{
     position: absolute;
@@ -113,6 +113,7 @@ hr {
     left: 525px;
     color: #87B049;
     font-weight: bold;
+    resize: vertical;
 }
 .table1 {
     position: absolute;
@@ -122,6 +123,7 @@ hr {
     height: 50%;
     border-collapse: collapse;
     font-weight: bolder;
+    resize: vertical;
 
 }
 th, td{
@@ -158,11 +160,7 @@ tr:nth-child(1) {
     bottom: 15%;
     font-weight: bolder;
     color:  #87B049;
-
 }
-
-
-
 .timein{
     color: white;
     text-align: center;
@@ -175,8 +173,6 @@ tr:nth-child(1) {
     bottom: 450px;
     background-color: green;
 }
-
-
 .timeout{
     color: white;
     text-align: center;
@@ -199,12 +195,14 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     display: inline-block;
     border: 2px solid;
     background: #f1f1f1;
+    resize: vertical;
 }
 .userdetails{
     position: absolute;
     font-size: 30px;
     left: 44%;
     top: 17%;
+    resize: vertical;
 }
 .personal {
     position: absolute;
@@ -215,11 +213,21 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     top:33%;
 }
 .table2 {
-    position: absolute;
-    background-color: #565656;
-    top: 25%;
-    left: 25%;
+    width: 60%;
+    padding-left: 20px;
+    padding-top: 30px;
+    display: inline-block;
+    padding-bottom: 30px;
 }
+
+.table3 {
+    float: right;
+    padding-right: 27%;
+    padding-top: 30px;
+    display: inline-block;
+
+}
+
 .account {
     position: absolute;
     border: 2px black groove;
@@ -227,12 +235,6 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     font-size: 30px;
     left: 56%;
     top:33%;
-}
-.table3 {
-    position: absolute;
-    background-color: #565656;
-    top: 25%;
-    left: 55%;
 }
 .compinfo {
     position: absolute;
@@ -242,30 +244,32 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     left: 56%;
     bottom: 30%;
 }
-.table4 {
-    position: absolute;
-    background-color: #565656;
-    bottom: 11%;
-    left: 56%;
-}
 .edit{
     position: absolute;
     border: 2px black groove;
-        background-color: #87B049;
+    background-color: #a4c573;
     font-size: 20px;
-    left: 46%;
-    bottom: 30%;
+    left: 27%;
+    bottom: 28%;
+    width: 51%;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.create{
+.adduser1{
     position: absolute;
     border: 2px black groove;
-    background-color: #87B049;
+    background-color: #a4c573;
     font-size: 20px;
-    left: 44%;
+    left: 27%;
     bottom: 20%;
+    text-decoration: #0c0c0c;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 51%;
+    text-align: center;
 }
 
-.dropbtn {
+.dropbtn1 {
     background-color: #87B049;
     color: white;
     padding: 16px;
@@ -276,14 +280,18 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: #87B049;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown {
     float: right;
     position: relative;
     display: inline-block;
-    left: 55px;
-    bottom: 50px;
+    left: 40px;
+    bottom: 32px;
 }
 
 .dropdown-content {
@@ -297,7 +305,7 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content a{
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -308,18 +316,19 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 
 .show {display: block;}
 
-.avatar {
+.avat {
 
     float: right;
-    padding-right: 460px;
-    bottom: 50px;
+    padding-right: 450px;
+    top: 50px;
+}
+* {
+    box-sizing: border-box;
+}
 
+input{
+    border-radius: 5px;
 }
-.editAvatar{
-    bottom: 20px;
-    height: 250px;
-    width: 250px;
-    padding-left: 3%;
-    padding-top: 7%;
-}
+
+
 

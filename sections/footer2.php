@@ -5,7 +5,7 @@
     <title> Elite Attendance Monitoring </title>
 </head>
 
-<div class="footer">
+<div class="footer1">
     <div class="horizon"></div>
     <marquee class="marq">
         THANK YOU FOR NOT BEING LATE! HAVE A NICE DAY!

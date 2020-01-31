@@ -1,9 +1,7 @@
 
-
-
 <head>
     <meta charset="UTF-8">
-    <link href="cssfiles/main.css" rel="stylesheet" type="text/css">
+    <link href="/Attendance/cssfiles/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -12,8 +10,8 @@
 
 <div class="head1">
     <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
-    <img class="img1" src="sections/companylogogreen.jpg" alt="comp">
-    <img src="avatar1.jpg" width="80px" height="80px" class="avatar">
+    <img class="img1" src="/Attendance/sections/companylogogreen.jpg" alt="comp">
+    <img src="avatar1.jpg" width="80px" height="80px" style="margin-left: 48%">
 
 
     <?php
@@ -24,7 +22,7 @@
  
 
         <br>    
-                 Hello: &nbsp;
+                 <label style="margin-left: 20px">Hello:</label> &nbsp;
                 '.$user['name'].' 
                 '.$user['midname'].'
                 '.$user['lastname'].'
@@ -46,7 +44,7 @@
 
 
     <div class="dropdown">
-    <img src="down2.jpg" width="22px" height="18px" onclick="myFunction()" class="dropbtn">
+    <img src="down2.jpg" width="25px" height="20px" onclick="myFunction()" class="dropbtn">
     <div id="myDropdown" class="dropdown-content">
     <a href="intime.php">Attendance</a>
     <a href="timein.php ">Record</a>

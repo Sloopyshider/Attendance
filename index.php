@@ -2,7 +2,7 @@
 
 <?php
 if(isset($_SESSION['user'])){
-    header('location:  profile.php');
+    header('location:  intime.php');
 }
 ?>
 

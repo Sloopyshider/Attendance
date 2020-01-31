@@ -2,5 +2,5 @@
 session_start();
 session_destroy();
 
-header('location:/elite/attendance/index.php');
+header('location:index.php');
 ?>

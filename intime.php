@@ -155,7 +155,7 @@ $sqllate = $conn->query("SELECT COUNT(timein) FROM timeattend WHERE timein >= '0
 
     <title> Elite Attendance Monitoring </title>
     <script type="text/javascript" src="cssfiles/main.js"></script>
-    <link href="Attendance/cssfiles/main.css" rel="stylesheet" type="text/css">
+    <link href="/Attendance/cssfiles/main.css" rel="stylesheet" type="text/css">
 
     <script>       var d,h,m,s,animate;
 
