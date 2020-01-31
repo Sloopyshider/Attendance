@@ -1,6 +1,6 @@
 
 body{
-    background-color: #839b5e;
+    background-color: #7d7d7d;
     resize: vertical;
 }
 
@@ -9,14 +9,14 @@ body{
     height: 100px;
     width: 100%;
     background-color: #87B049;
-    resize: vertical;
+
 }
 
 .img1
 {
     height: 80px;
     width: 300px;
-    resize: vertical;
+
 }
 
 .btn {
@@ -25,16 +25,6 @@ body{
     resize: vertical;
 
 }
-
-a {
-    background-color: black;
-    color: white;
-    padding: 2px 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    resize: vertical;
-}
-
 
 
 .employeename{
@@ -81,17 +71,16 @@ hr {
 
 .vl {
     position: absolute;
-    border-left: 6px solid #49B087;
-    height: 100%;
-    left: 25%;
-    top: 15%;
-    resize: vertical;
+    border-left: 6px solid #b04989;
+    height: 55%;
+    left: 50%;
+    top: 113px;
+
 }
-.footer {
+.footer1 {
     position: fixed;
-    bottom: 5%;
-    height: 2%;
-    width: 1685px;
+    bottom: 3%;
+    width: 100%;
     resize: vertical;
 }
 .marq{
@@ -171,11 +160,7 @@ tr:nth-child(1) {
     bottom: 15%;
     font-weight: bolder;
     color:  #87B049;
-
 }
-
-
-
 .timein{
     color: white;
     text-align: center;
@@ -188,8 +173,6 @@ tr:nth-child(1) {
     bottom: 450px;
     background-color: green;
 }
-
-
 .timeout{
     color: white;
     text-align: center;
@@ -230,12 +213,21 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     top:33%;
 }
 .table2 {
-    position: absolute;
-    display: table-column;
-    background-color: #565656;
-    top: 25%;
-    left: 10%;
+    width: 60%;
+    padding-left: 20px;
+    padding-top: 30px;
+    display: inline-block;
+    padding-bottom: 30px;
 }
+
+.table3 {
+    float: right;
+    padding-right: 27%;
+    padding-top: 30px;
+    display: inline-block;
+
+}
+
 .account {
     position: absolute;
     border: 2px black groove;
@@ -255,21 +247,29 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 .edit{
     position: absolute;
     border: 2px black groove;
-    background-color: #87B049;
+    background-color: #a4c573;
     font-size: 20px;
-    left: 46%;
-    bottom: 30%;
+    left: 27%;
+    bottom: 28%;
+    width: 51%;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.create{
+.adduser1{
     position: absolute;
     border: 2px black groove;
-    background-color: #87B049;
+    background-color: #a4c573;
     font-size: 20px;
-    left: 44%;
+    left: 27%;
     bottom: 20%;
+    text-decoration: #0c0c0c;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 51%;
+    text-align: center;
 }
 
-.dropbtn {
+.dropbtn1 {
     background-color: #87B049;
     color: white;
     padding: 16px;
@@ -280,14 +280,18 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: #87B049;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown {
     float: right;
     position: relative;
     display: inline-block;
-    left: 55px;
-    bottom: 50px;
+    left: 40px;
+    bottom: 32px;
 }
 
 .dropdown-content {
@@ -301,7 +305,7 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content a{
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -312,70 +316,19 @@ input[type=text], input[type=password], input[type=email], input[type=date], inp
 
 .show {display: block;}
 
-.avatar {
+.avat {
 
     float: right;
     padding-right: 450px;
     top: 50px;
+}
+* {
+    box-sizing: border-box;
+}
 
-
-}
-.editAvatar{
-    bottom: 20px;
-    height: 250px;
-    width: 250px;
-    padding-left: 3%;
-    padding-top: 7%;
-    resize: vertical;
-}
-{
-box-sizing: border-box;
-}
-.container-e{
-    border-radius: 5px;
-    background-color: #4989b0;
-    padding-left: 20%;
-
-}
-.label-e{
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    text-align: left;
-    float: left;
-    width: 75%;
-    margin-top: 2px;
-}
-.col-emp{
-    width: 80%;
-    margin-top: 5px;
-    padding-left: 60px;
+input{
     border-radius: 5px;
 }
-.container-ryt{
-    border-radius: 5px;
-    background-color: #4989b0;
-    padding-left: 20%;
 
-}
-.label-ryt{
-    padding: 12px 12px 12px 0;
-    width: 55%;
-    float: right;
-    margin-top: 2px;
-}
-.col-ryt{
-    width: 50%;
-    margin-top: 5px;
-    padding-right: 60px;
-    float: right;
-}
-
-
-@media screen and (max-width: 600px) {
-    .avatar, .employeeidnumber, .employeename, .employeeposition, .head1, .hr{
-        width: 100%;
-        margin-top: 0;
-    }
-}
 
 
