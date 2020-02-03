@@ -1,9 +1,9 @@
 <?php
-include "sections/session.php";
+include "sections/session2.php";
 ?>
 
 <?php
-if(!isset($_SESSION['user'])){
+if(!isset($_SESSION['admin'])){
     header('location: index.php');
 }
 
@@ -15,7 +15,7 @@ $timein1 = date('H:i:s');
 
 
 $stmt = $conn->prepare("select *from timeattend WHERE users_id = :users_id and datetd =CURRENT_DATE ORDER BY users_id DESC LIMIT 1");
-$stmt->execute(['users_id' => $_SESSION['user']]);
+$stmt->execute(['users_id' => $_SESSION['admin']]);
 
 
 $conn = $pdo->open();
@@ -25,7 +25,7 @@ $status2 = "Present";
 $status3 = "Absent";
 
 $stmt1 = $conn->prepare("SELECT * FROM employee WHERE id=:id");
-$stmt1->execute(['id'=>$_SESSION['user']]);
+$stmt1->execute(['id'=>$_SESSION['admin']]);
 
 $attendances = [];
 
@@ -132,8 +132,8 @@ foreach ($stmt as $row) {
 }
 
 
-$sqlpresent = $conn->query("SELECT COUNT(timein) FROM timeattend where users_id=" .$_SESSION['user'])->fetchColumn();
-$sqllate = $conn->query("SELECT COUNT(timein) FROM timeattend WHERE timein >= '09:15:00' and users_id=" .$_SESSION['user'] )->fetchColumn();
+$sqlpresent = $conn->query("SELECT COUNT(timein) FROM timeattend where users_id=" .$_SESSION['admin'])->fetchColumn();
+$sqllate = $conn->query("SELECT COUNT(timein) FROM timeattend WHERE timein >= '09:15:00' and users_id=" .$_SESSION['admin'] )->fetchColumn();
 
 
 //echo var_dump($total);
@@ -154,7 +154,7 @@ $sqllate = $conn->query("SELECT COUNT(timein) FROM timeattend WHERE timein >= '0
     <meta charset="UTF-8">
 
     <title> Elite Attendance Monitoring </title>
-    <script type="text/javascript" src="cssfiles/main.js"></script>
+    <script type="text/javascript" src="/attendance/cssfiles/main.js"></script>
     <link href="/Attendance/cssfiles/main.css" rel="stylesheet" type="text/css">
 
     <script>       var d,h,m,s,animate;
@@ -215,7 +215,7 @@ $sqllate = $conn->query("SELECT COUNT(timein) FROM timeattend WHERE timein >= '0
 </head>
 
 <?php
-include "sections/navbar2.php";
+include "sections/adminnav.php";
 ?>
 
 
@@ -502,7 +502,7 @@ elseif($timein > null){
           
            
      
-     <input type="hidden" max="100" name="users_id" placeholder="'.$user['id'].'" value="'.$user['id'].'" ><br><br>
+     <input type="hidden" max="100" name="users_id" placeholder="'.$admin['id'].'" value="'.$admin['id'].'" ><br><br>
   <!--Time In and out Value-->
   
      <input type="hidden" name="timein" placeholder="id" hidden><br><br>
