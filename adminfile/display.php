@@ -215,7 +215,8 @@ for ($initialPage = 0; $initialPage * $limit < $totalCount; $initialPage++)
 }
 
 ?>
-
+<br>
+<button class="timein" onclick="window.location.href = 'csv.php';"> Save CSV</button>
 </body>
 
 <?php
