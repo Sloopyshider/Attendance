@@ -2,11 +2,9 @@
 include 'sections/session.php';
 include 'sections/navbar2.php';
 
+if(isset($_POST['addUser'])){
 
 
-if(isset($_POST['AddUser'])){
-
-    $id = $_POST['id'];
     $username = $_POST['username'];
     $fname = $_POST ['fname'];
     $mid_name = $_POST ['mid_name'];
@@ -18,22 +16,55 @@ if(isset($_POST['AddUser'])){
     $numb = $_POST ['numb'];
     $numb2 = $_POST ['numb2'];
     $pass = $_POST ['pass'];
-    $con_pass = $_POST ['con_pass'];
-    }
 
-$userId = $user['id'];
-$userName = $user['username'];
-$firstname = $user ['name'];
-$mid_name = $user ['midname'];
-$last_name = $user ['lastname'];
-$bday = $user ['birthdate'];
-$address = $user ['address'];
-$email_add = $user ['email'];
-$userPositionId = $user['pos'];
-$numb = $user ['contact'];
-$pass = $user ['password'];
-$con_pass = $user ['password'];
-$numb2 = $user ['sub_contact'];
+
+
+        $insrt =('INSERT INTO `employee`(`id`,
+ `username`, 
+`email`, 
+`password`, 
+`name`, 
+`midname`, 
+`lastname`, 
+`pos`, 
+`birthdate`, 
+`address`, 
+`contact`, 
+`sub_contact`) 
+                VALUES
+([:id],
+[:username],
+[:email_add],
+[:pass],
+[:fname],
+[:mid_name],
+[:last_name],
+[:posit],
+[:bday],
+[:address],
+[:numb],
+[:numb2])');
+
+                $params = ([
+            ':username' => $username,
+            ':email_add' => $email_add,
+            ':pass' => $pass,
+            ':fname' => $fname,
+            ':mid_name' => $mid_name,
+            ':last_name' => $last_name,
+            ':posit' => $posit,
+            ':bday' => $bday,
+            ':address' => $address,
+            ':numb' => $numb,
+            ':numb2' => $numb2
+        ]);
+                $insrt = $conn->prepare($insrt);
+                $exc = $insrt->execute($params);
+
+                if ($exc){
+                    echo 'inserted';
+                }
+}
 
 
 ?>
@@ -59,10 +90,10 @@ echo"
 <form action='add_user.php' method='post'>
 <td>
 <div style='padding-top: 50px'>
-    <input type='hidden' placeholder='id' name='id' id='id' value='$userId'> 
+     
     
     <label style='padding-left: 362px'>Username:</label><input type='text' placeholder='Edit your Username' id='username'  name='username' pattern='[a-z]{2,}'  style='width: 20%' value=''/>
-    <label style='margin-left: 165px'></label>E-mail:<input type='email' placeholder='Put your Email'  readonly name='email_add' id='email_add' style='width: 20%' value=''/> 
+    <label style='margin-left: 165px'></label>E-mail:<input type='email' placeholder='Put your Email'   name='email_add' id='email_add' style='width: 20%' value=''/> 
     <br><br>
     <label style='padding-left: 355px'>First Name:</label><input type='text' placeholder='Put your First Name' id='fname'   name='fname' style='width: 20%' value=''/>
     <label style='margin-left: 148px'></label>Password:<input type='password' placeholder='Update your Password'  name='pass' id='pass' style='width: 20%'/>
