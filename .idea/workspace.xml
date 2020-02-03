@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cssfiles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/eprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/navbar2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +39,18 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>label</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VMYbvOW8xCtyypHDW63piAnbVr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,7 +64,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -193,7 +197,23 @@
       <workItem from="1580461880274" duration="1796000" />
       <workItem from="1580463687387" duration="1775000" />
       <workItem from="1580466150959" duration="1794000" />
-      <workItem from="1580467957694" duration="268000" />
+      <workItem from="1580467957694" duration="624000" />
+      <workItem from="1580692076832" duration="5000" />
+      <workItem from="1580692541890" duration="1276000" />
+      <workItem from="1580693873945" duration="103000" />
+      <workItem from="1580694025804" duration="24000" />
+      <workItem from="1580694063171" duration="2000" />
+      <workItem from="1580694080537" duration="3000" />
+      <workItem from="1580694094455" duration="2180000" />
+      <workItem from="1580696418007" duration="1830000" />
+      <workItem from="1580698269239" duration="1917000" />
+      <workItem from="1580700215966" duration="1632000" />
+      <workItem from="1580702034099" duration="1924000" />
+      <workItem from="1580706874774" duration="1796000" />
+      <workItem from="1580708700200" duration="1795000" />
+      <workItem from="1580710519542" duration="1812000" />
+      <workItem from="1580712346571" duration="1798000" />
+      <workItem from="1580714163638" duration="1280000" />
     </task>
     <task id="LOCAL-00001" summary="In Time new file">
       <created>1578462987005</created>
@@ -220,6 +240,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="In Time new file" />
@@ -230,10 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1579142657092" />
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579142793023">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580715232822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579142793023" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580715232822" />
     <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578988314763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,6 +276,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="245" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580349170471" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580715301695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580715301695" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1580177967308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -262,10 +300,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="323" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578994429419" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580467957455">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580714163531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580467957455" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580714163531" />
     <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1580458393535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -274,6 +312,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580178058546" />
+    <state x="745" y="310" key="git4idea.merge.GitMergeDialog" timestamp="1580715249658">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="745" y="310" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580715249658" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1580436807731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -282,10 +324,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="512" y="340" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1578994334072" />
-    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup" timestamp="1580460185361">
+    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup" timestamp="1580710858911">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580460185361" />
+    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580710858911" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

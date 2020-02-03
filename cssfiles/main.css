@@ -1,41 +1,35 @@
-
 body{
-    background-color: #7d7d7d;
+    background-color: #87B049;
     resize: vertical;
 }
 
-.head1
-{
-    height: 100px;
-    width: 100%;
-    background-color: #87B049;
 
-}
 
 .img1
 {
-    bottom: 80px;
-    width: 300px;
-
+    padding-top: 20px;
+    padding-left: 160px;
+    height: 80px;
+    width: 380px;
 }
 
 .btn {
     position: absolute;
     left: auto;
     resize: vertical;
-
 }
 
 
 .employeename{
     position: absolute;
-    right: 14%;
+    right: 13%;
     height: 5px;
     font-size: 14px;
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
     top: 0;
     resize: vertical;
+    padding-top: 10px;
 }
 
 .employeeposition{
@@ -65,8 +59,7 @@ hr {
     margin: auto;
     border-style: solid;
     border-width: 4px;
-    border-color: #b04989;
-    resize: vertical;
+    border-color: navajowhite;
 }
 
 .vl {
@@ -81,7 +74,6 @@ hr {
     position: fixed;
     bottom: 3%;
     width: 100%;
-    resize: vertical;
 }
 .marq{
     font-size: 22px;
@@ -94,7 +86,7 @@ hr {
     margin-bottom: 10px;
     border-style: solid;
     border-width: 4px;
-    border-color:  #b04989;
+    border-color:  navajowhite;
     resize: vertical;
 }
 .clock {
@@ -187,11 +179,10 @@ tr:nth-child(1) {
 }
 
 .userdetails{
-    position: absolute;
-    font-size: 30px;
-    left: 44%;
-    top: 17%;
-    resize: vertical;
+    font-size: 20px;
+    border: 2px black groove;
+    margin-left: 200px;
+
 }
 .personal {
     position: absolute;
@@ -222,9 +213,9 @@ tr:nth-child(1) {
     border: 2px black groove;
     background-color: #a4c573;
     font-size: 20px;
-    left: 27%;
-    bottom: 28%;
-    width: 51%;
+    left: 240px;
+    bottom: 41%;
+    width: 15%;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -233,12 +224,12 @@ tr:nth-child(1) {
     border: 2px black groove;
     background-color: #a4c573;
     font-size: 20px;
-    left: 27%;
+    left: 20%;
     bottom: 20%;
     text-decoration: #0c0c0c;
     border-radius: 5px;
     cursor: pointer;
-    width: 51%;
+    width: 55%;
     text-align: center;
 }
 .cncl{
@@ -246,13 +237,14 @@ tr:nth-child(1) {
     border: 2px black groove;
     background-color: #a4c573;
     font-size: 20px;
-    left: 27%;
-    bottom: 20%;
+    left: 240px;
+    bottom: 34%;
     text-decoration: #0c0c0c;
     border-radius: 5px;
     cursor: pointer;
-    width: 51%;
+    width: 15%;
     text-align: center;
+
    
 }
 
@@ -266,8 +258,6 @@ tr:nth-child(1) {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #87B049;
-    color: white;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -284,7 +274,7 @@ tr:nth-child(1) {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #87B049;
+    background-color: #cff4d2;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -293,7 +283,7 @@ tr:nth-child(1) {
 }
 
 .dropdown-content a{
-    color: white;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -303,10 +293,10 @@ tr:nth-child(1) {
 
 .show {display: block;}
 
-.avat {
+.avat{
 
     float: right;
-    padding-right: 450px;
+    padding-right: 420px;
     top: 50px;
 }
 * {
@@ -321,10 +311,17 @@ input{
     display: inline-block;
     border: 2px solid;
     background: #f1f1f1;
+
 }
 
 label{
     font-weight: bold;
+    color: #0c0c0c;
+    font-family: SansSerif;
+}
+.div1{
+    padding-top: 50px;
+    padding-left: 90px;
 }
 
 select{
@@ -336,6 +333,16 @@ select{
     border: 2px solid;
     background: #f1f1f1;
 }
-
+.border {
+    position: absolute;
+    border: 5px solid navajowhite;
+    left: 200px;
+    top: 150px;
+    bottom: 220px;
+    right: 200px;
+    background-color: grey;
+    z-index: -1;
+    border-radius: 10px;
+}
 
 

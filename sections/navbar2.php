@@ -10,8 +10,8 @@
 
 <div class="head1">
     <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
-    <img class="img1" src="/Attendance/sections/companylogogreen.jpg" alt="comp">
-    <img src="avatar1.jpg" width="80px" height="80px" style="margin-left: 48%">
+    <img class="img1" src='sections/companylogogreen.jpg' alt="">
+    <img src="avatar1.jpg" width="60px" height="60px" style="margin-left: 50%">
 
 
     <?php
@@ -36,7 +36,7 @@
     }
 
     echo'
-        <br>
+        <br>    
         Position:    &nbsp      
         '.$user1['posname'].'
         <br>
