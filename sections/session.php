@@ -3,7 +3,7 @@ include "sections/connect.php";
 session_start();
 
 if(isset($_SESSION['admin'])){
-    header('location: admin/index.html');
+    header('location: adminfile/intime.php');
 }
 
 if(isset($_SESSION['user'])){
