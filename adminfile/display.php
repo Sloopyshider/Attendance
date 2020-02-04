@@ -14,7 +14,7 @@ if(!isset($_SESSION['admin'])){
 date_default_timezone_set('Asia/Manila');
 // <editor-fold desc="PAGINATION" default="collapsed">
 
-$limit = 3;
+$limit = 7;
 
 $page = isset($_GET['page']) ? $_GET['page']: 0;
 $offset = $page * $limit;
@@ -74,7 +74,12 @@ foreach ($stmt as $row) {
     /*Created the difference*/
 
     $time2 = date_create($timeout);
+
+
     $interval = date_diff($basetimecreate,$time2);
+
+    $interval1 = date_diff($time2,$time1);
+
     $date = date('M. d, Y', strtotime($date1));
     $dayOfTheWeek = date('l', strtotime($date));
 
@@ -89,7 +94,7 @@ foreach ($stmt as $row) {
 
     }
     elseif ($total < $timeout){
-        $total =  $interval->format("%h hrs");
+        $total =  $interval1->format("%h hrs");
 
     }
     else
@@ -129,28 +134,33 @@ foreach ($stmt as $row) {
 
 
 </style>
+
 <head>
     <meta charset="UTF-8">
 
     <title> Elite Attendance Monitoring </title>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
+
+
+<body>
 <?php
 include "sections/adminnav.php";
 ?>
-
-<body>
+<br>
 <hr>
+<br>
+ <h1 class="rounded-pill" style="background: #33c58e"> <center> Overall Employee Attendance</center></h1>
 <br>
 
 <?php
 echo '
 
 
-<table class="tbl-qa">
-    <tr>
-        <th style="width: 150px;">Last Name</th>
+<table class="table table-hover table-bordered table-striped" style="background: #63fd88">
+    <tr class="thead-dark">
+        <th style="width: 150px;">Name</th>
         <th style="width: 150px;">Date</th>
         <th style="width: 150px; height: 40px">Day of the Week</th>
         <th style="width: 150px;">Time in</th>
@@ -165,7 +175,7 @@ echo '
 try{
 
     foreach($attendances as $attendance) {
-        echo "<tr style='font-size: 30px'>";
+        echo "<tr class='table-borderless '>";
 
         echo " 
         <td>".$attendance['lastname']."</td>
@@ -193,8 +203,8 @@ try{
 ?>
 </tr>
 </table>
-<br>
 
+<center>
 <?php
 
 //
@@ -207,21 +217,26 @@ try{
 for ($initialPage = 0; $initialPage * $limit < $totalCount; $initialPage++)
 {   $displayPage = $initialPage + 1;
     if($initialPage == $page){
-        echo "<alink href='display.php?page=$initialPage' style='margin-left: 10px; '><font size='10px'>$displayPage</font>  </alink>";
+        echo " 
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href='display.php?page=$initialPage' style='background: cadetblue' class='btn btn-primary stretched-link'>$displayPage </a> 
+
+";
     }
     else{
-        echo "<a href='display.php?page=$initialPage' style='margin-left: 10px; background: red'> <font size='5px'> $displayPage </font></a> ";
+        echo " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href='display.php?page=$initialPage' class='btn btn-primary stretched-link'> $displayPage </a> " ;
     }
 }
 
 ?>
-<br>
-<button class="timein" onclick="window.location.href = 'csv.php';"> Save CSV</button>
+</center>
+<center>
+    <br>
+<button class="btn btn-warning" onclick="window.location.href = 'csv.php';";> Save CSV</button>
+</center>
 </body>
+<br>
 
-<?php
-include "sections/footer2.php";
-?>
+
 </html>
 
 
