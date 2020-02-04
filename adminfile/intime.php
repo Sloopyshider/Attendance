@@ -404,7 +404,7 @@ echo '
 <br>
 <br>
 &nbsp;
-<label class="clock     ">
+<label class="clock">
     <span id="hr">00</span>
     <span> : </span>
     <span id="min">00</span>
@@ -440,17 +440,14 @@ echo '
     <br>        
    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;
           
           ';
 
 
 $tib = "<button class=\"timein\" name=\"Timein\" type=\"submit\" onclick=\"btn()\"> Time In </button>";
 if($date1 == $datetoday1){
-    echo 'You Login in Today';
+    echo 'You have been Logged IN';
  }
 elseif($date1 != null){
     echo $tib;
@@ -490,7 +487,7 @@ else{
 $tob = "<button class=\"timeout\" name=\"Timeout\" type=\"submit\" onclick=\"btn()\"> Time Out </button>";
 if($timeout != null and  $datetoday != $date1)
 {
-    echo "";}
+    echo "You have been Logged OUT";}
 elseif($timein > null){
     echo $tob;
 }

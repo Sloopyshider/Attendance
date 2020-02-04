@@ -222,34 +222,18 @@ include "sections/navbar2.php";
 <body>
 <hr>
 
-
-
-
-
-
-
-
-
-
-
 <?php
 
-echo ' 
-
-
-
-
-
-
+echo' 
 
 <table class="table1">
     <tr>
         <th>Date</th>
-        <th width="70px">Day of the Week</th>
-        <th width="150px">Time in</th>
-        <th width="150px">Time out</th>
-        <th width="150px">Total Hours</th>
-        <th width="150px">Status</th>
+        <th width="50px">Day of the Week</th>
+        <th width="50px">Time in</th>
+        <th width="50px">Time out</th>
+        <th width="50px">Total Hours</th>
+        <th width="50px">Status</th>
 
     </tr>
     ';
@@ -404,7 +388,8 @@ echo '
 <br>
 <br>
 &nbsp;
-<label class="clock     ">
+
+<label class="clock">
     <span id="hr">00</span>
     <span> : </span>
     <span id="min">00</span>
@@ -448,9 +433,9 @@ echo '
           ';
 
 
-$tib = "<button class=\"timein\" name=\"Timein\" type=\"submit\" onclick=\"btn()\"> Time In </button>";
+$tib = "<button class='timein' name=\"Timein\" type=\"submit\" onclick=\"btn()\"> Time In </button>";
 if($date1 == $datetoday1){
-    echo 'You Login in Today';
+    echo 'You have been Timed IN';
  }
 elseif($date1 != null){
     echo $tib;
@@ -473,15 +458,15 @@ else{
      <br>
      <br>
      <br>
-          <br>
+     <br>
 
      
         &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-         &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp; &nbsp;&nbsp;
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp;&nbsp;
           
           
           ';
@@ -490,10 +475,12 @@ else{
 $tob = "<button class=\"timeout\" name=\"Timeout\" type=\"submit\" onclick=\"btn()\"> Time Out </button>";
 if($timeout != null and  $datetoday != $date1)
 {
-    echo "";}
+    echo "You have been Timed OUT";}
+
 elseif($timein > null){
     echo $tob;
 }
+
 
 
 
@@ -502,7 +489,7 @@ elseif($timein > null){
           
            
      
-     <input type="hidden" max="100" name="users_id" placeholder="'.$user['id'].'" value="'.$user['id'].'" ><br><br>
+   <input type="hidden" max="100" name="users_id" placeholder="'.$user['id'].'" value="'.$user['id'].'" ><br><br>
   <!--Time In and out Value-->
   
      <input type="hidden" name="timein" placeholder="id" hidden><br><br>
@@ -510,7 +497,7 @@ elseif($timein > null){
        
      <input type="hidden" name="datetd" placeholder="Last Name" value="<?php echo $today;?>" hidden><br><br>
      <input type="hidden" min="10" max="100" name="total" placeholder="Age" value="<?php echo $total;?>" hidden><br><br>
-     
+ 
                                               
     
   

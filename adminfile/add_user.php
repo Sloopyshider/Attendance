@@ -1,8 +1,8 @@
 <?php
-include 'sections/session.php';
-include 'sections/navbar2.php';
+include 'sections/session2.php';
+include 'sections/adminnav.php';
 
-if(isset($_POST['addUser'])){
+if(isset($_POST['addUser1'])){
 
 
     $username = $_POST['username'];
@@ -74,13 +74,14 @@ if(isset($_POST['addUser'])){
 
     <title> Add User Profile </title>
     <link href='/cssfiles/main.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 <body>
 
 <?php
 
-echo"
+echo "
 
 
         
@@ -116,7 +117,7 @@ echo"
 
 
 echo"
-<button type='reset' class='edit' name='addUser' id='addUser'> ADD USER </button>
+
 
 
 </div>

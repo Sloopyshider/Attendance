@@ -1,16 +1,24 @@
 body{
-    background-color: #87B049;
-    resize: vertical;
+    background: linear-gradient(to top, #7be495 30%, #185a9d 100%);
+    background-size: cover;
+    min-height:100vh;
+    overflow: hidden;
 }
-
+.head1
+{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 2px;
+}
 
 
 .img1
 {
     padding-top: 20px;
-    padding-left: 160px;
+    padding-left: 130px;
     height: 80px;
-    width: 380px;
+    width: 360px;
 }
 
 .btn {
@@ -27,9 +35,9 @@ body{
     font-size: 14px;
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
-    top: 0;
-    resize: vertical;
-    padding-top: 10px;
+    padding-top: 0;
+    color: white;
+
 }
 
 .employeeposition{
@@ -40,7 +48,7 @@ body{
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
     top: 6%;
-    resize: vertical;
+
 }
 
 .employeeidnumber{
@@ -51,54 +59,43 @@ body{
     font-family: Segoe UI Symbol, monospace;
     font-weight: bold;
     top: 9%;
-    resize: vertical;
 
 }
+
 hr {
     display: block;
     margin: auto;
-    border-style: solid;
-    border-width: 4px;
-    border-color: navajowhite;
+    border: 4px solid #95D8EB;
 }
 
-.vl {
-    position: absolute;
-    border-left: 6px solid #b04989;
-    height: 55%;
-    left: 50%;
-    top: 113px;
-
-}
 .footer1 {
     position: fixed;
     bottom: 3%;
     width: 100%;
 }
+
 .marq{
     font-size: 22px;
     height: 20px;
     color: #0c0c0c;
     resize: vertical;
 }
+
 .horizon {
     display: block;
     margin-bottom: 10px;
-    border-style: solid;
-    border-width: 4px;
-    border-color:  navajowhite;
-    resize: vertical;
-}
-.clock {
-    padding-top: 10px;
-    margin-left: 80px;
+    border: 4px solid #95D8EB;
     width: auto;
-    height: auto;
-    font-weight: bold;
-    color:  #87B049;
-    font-size: 50px;
-    resize: vertical;
 }
+
+.clock {
+    font-weight: bold;
+    color:  #0c0c0c;
+    font-size: 40px;
+    margin-left: 9%;
+    width: 60px;
+}
+
 .labeltimesheet{
     position: absolute;
     padding-top: 80px;
@@ -107,19 +104,20 @@ hr {
     font-weight: bold;
     resize: vertical;
 }
+
 .table1 {
     position: absolute;
     font-family: Arial, sans-serif;
-    left: 30%;
-    width: 60%;
-    height: 50%;
+    left: 24%;
+    width: 65%;
+    height: 100px;
     border-collapse: collapse;
     font-weight: bolder;
-    resize: vertical;
-
+    margin-top: 100px;
 }
+
 th, td{
-    border: 2px solid black;
+    border: 3px solid #FCC133;
     text-align: center;
     width: auto;
 }
@@ -127,55 +125,49 @@ th, td{
 tr:nth-child(1) {
     background-color: #666666;
 }
-.labellates{
 
+.labellates{
     position: absolute;
     margin-left: 30%;
     bottom: 15%;
     font-weight: bolder;
-    color:  #87B049;
+    color:  #0c0c0c;
 }
 
 .labelpresent{
-
     position: absolute;
     margin-left: 55%;
     bottom: 15%;
     font-weight: bolder;
-    color:  #87B049;
+    color:  #0c0c0c;
 }
 
 .labelabsent{
-
     position: absolute;
     margin-left: 80%;
     bottom: 15%;
     font-weight: bolder;
-    color:  #87B049;
+    color:  #0c0c0c;
 }
+
 .timein{
     color: white;
-    text-align: center;
     font-size: 20px;
-    opacity: 0.6;
-    transition: 0.3s;
     cursor: pointer;
-    border-radius: 10%;
-    left: 167px;
+    border-radius: 10px;
+    margin-left: 50px;
     bottom: 450px;
-    background-color: green;
+    background-color: yellowgreen;
 }
+
 .timeout{
     color: white;
-    text-align: center;
     font-size: 20px;
-    opacity: 0.6;
-    transition: 0.3s;
     cursor: pointer;
-    border-radius: 10%;
-    left: 167px;
-    bottom: 450px;
-    background-color: red;
+    border-radius: 10px;
+    margin-left: 20px;
+    bottom: 470px;
+    background-color: yellowgreen;
 }
 
 .userdetails{
@@ -184,6 +176,7 @@ tr:nth-child(1) {
     margin-left: 200px;
 
 }
+
 .personal {
     position: absolute;
     border: 2px black groove;
@@ -192,6 +185,7 @@ tr:nth-child(1) {
     left: 31%;
     top:33%;
 }
+
 .account {
     position: absolute;
     border: 2px black groove;
@@ -200,6 +194,7 @@ tr:nth-child(1) {
     left: 56%;
     top:33%;
 }
+
 .compinfo {
     position: absolute;
     border: 2px black groove;
@@ -208,10 +203,11 @@ tr:nth-child(1) {
     left: 56%;
     bottom: 30%;
 }
+
 .edit{
     position: absolute;
     border: 2px black groove;
-    background-color: #a4c573;
+    background-color: pink;
     font-size: 20px;
     left: 45%;
     bottom: 28%;
@@ -219,6 +215,7 @@ tr:nth-child(1) {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .adduser1{
     position: absolute;
     border: 2px black groove;
@@ -232,6 +229,7 @@ tr:nth-child(1) {
     width: 15%;
     text-align: center;
 }
+
 .cncl{
     position: absolute;
     border: 2px black groove;
@@ -294,7 +292,7 @@ tr:nth-child(1) {
 .avat{
 
     float: right;
-    padding-right: 420px;
+    padding-right: 430px;
     top: 50px;
 }
 * {
@@ -314,7 +312,7 @@ input{
 
 label{
     font-weight: bold;
-    color: #0c0c0c;
+    color: white;
     font-family: SansSerif;
 }
 .div1{
@@ -331,9 +329,10 @@ select{
     border: 2px solid;
     background: #f1f1f1;
 }
+
 .border {
     position: absolute;
-    border: 5px solid navajowhite;
+    border: 5px solid #FCC133;
     left: 330px;
     top: 150px;
     bottom: 150px;
@@ -341,6 +340,4 @@ select{
     background-color: grey;
     z-index: -1;
     border-radius: 10px;
-   
 }
-

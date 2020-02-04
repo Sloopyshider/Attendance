@@ -11,7 +11,7 @@
 <div class="head1">
     <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
     <img class="img1" src='sections/companylogogreen.jpg' alt="">
-    <img src="avatar1.jpg" width="60px" height="60px" style="margin-left: 50%">
+    <img src="avatar1.jpg" width="60px" height="60px" style="margin-left: 51%">
 
 
     <?php
@@ -44,7 +44,7 @@
 
 
     <div class="dropdown">
-    <img src="down2.jpg" width="25px" height="20px" onclick="myFunction()" class="dropbtn">
+    <img src="down4.jpg" width="25px" height="20px" onclick="myFunction()" class="dropbtn">
     <div id="myDropdown" class="dropdown-content">
     <a href="intime.php">Attendance</a>
     <a href="record.php ">Record</a>
