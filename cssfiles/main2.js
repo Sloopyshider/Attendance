@@ -36,13 +36,6 @@ function $(id,val){
 
 window.onload=init;
 
-function btn() {
-    alert("You have successfully Time in!");
-}
-
-function button() {
-    alert("You have successfully Time in!");
-}
 
 function n(){
     d =  new Date();

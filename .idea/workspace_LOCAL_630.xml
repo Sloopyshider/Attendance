@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/down4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminfile/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminfile/add_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminfile/eprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminfile/eprofile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminfile/intime.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminfile/intime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssfiles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cssfiles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/down2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/down3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/eprofile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intime.php" beforeDir="false" afterPath="$PROJECT_DIR$/intime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/navbar2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sections/navbar2.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VMYbvOW8xCtyypHDW63piAnbVr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Private\htdocs\Attendance\admin" />
+      <recent name="C:\xampp\htdocs\Attendance\includes" />
+      <recent name="C:\xampp\htdocs\Attendance" />
+      <recent name="C:\xampp\htdocs\Attendance\admin" />
+      <recent name="C:\xampp\htdocs\Attendance\sections" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Private\htdocs\Attendance\adminfile" />
+      <recent name="C:\xampp\htdocs\Attendance\sections" />
+      <recent name="C:\xampp\htdocs\Attendance" />
+      <recent name="C:\xampp\htdocs\Attendance\cssfiles" />
+      <recent name="C:\xampp\htdocs\Attendance\admin" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac2bc1db-1875-4bb2-b41e-9911f966ae6b" name="Default Changelist" comment="" />
+      <created>1577064506004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577064506004</updated>
+      <workItem from="1577064507889" duration="27352000" />
+      <workItem from="1577322720853" duration="24274000" />
+      <workItem from="1577940656162" duration="2000" />
+      <workItem from="1578274478273" duration="23855000" />
+      <workItem from="1578360373935" duration="19364000" />
+      <workItem from="1578448755932" duration="10317000" />
+      <workItem from="1578460739265" duration="2869000" />
+      <workItem from="1578472451734" duration="3285000" />
+      <workItem from="1578621095926" duration="2103000" />
+      <workItem from="1578634915305" duration="9750000" />
+      <workItem from="1578962045941" duration="3738000" />
+      <workItem from="1578966959502" duration="25282000" />
+      <workItem from="1579003548225" duration="1120000" />
+      <workItem from="1579049933230" duration="3057000" />
+      <workItem from="1579054782225" duration="23197000" />
+      <workItem from="1579137353829" duration="18635000" />
+      <workItem from="1580177926196" duration="51000" />
+      <workItem from="1580177990966" duration="1794000" />
+      <workItem from="1580179805379" duration="1876000" />
+      <workItem from="1580181693070" duration="2349000" />
+      <workItem from="1580186327132" duration="1816000" />
+      <workItem from="1580188170895" duration="1820000" />
+      <workItem from="1580190082918" duration="1796000" />
+      <workItem from="1580191892738" duration="1794000" />
+      <workItem from="1580193712411" duration="1795000" />
+      <workItem from="1580195523384" duration="1796000" />
+      <workItem from="1580197854566" duration="1797000" />
+      <workItem from="1580199664149" duration="1802000" />
+      <workItem from="1580201498460" duration="1808000" />
+      <workItem from="1580203319190" duration="1681000" />
+      <workItem from="1580205128043" duration="1918000" />
+      <workItem from="1580207072207" duration="1796000" />
+      <workItem from="1580208882342" duration="1247000" />
+      <workItem from="1580260478154" duration="1260000" />
+      <workItem from="1580261786342" duration="1752000" />
+      <workItem from="1580263595846" duration="546000" />
+      <workItem from="1580264240520" duration="1798000" />
+      <workItem from="1580266050145" duration="1804000" />
+      <workItem from="1580267865656" duration="115000" />
+      <workItem from="1580268022228" duration="1793000" />
+      <workItem from="1580269827245" duration="1865000" />
+      <workItem from="1580274804164" duration="1798000" />
+      <workItem from="1580276617745" duration="1571000" />
+      <workItem from="1580278465314" duration="2000" />
+      <workItem from="1580279210801" duration="1794000" />
+      <workItem from="1580281020880" duration="1800000" />
+      <workItem from="1580282852306" duration="1800000" />
+      <workItem from="1580284663582" duration="1795000" />
+      <workItem from="1580286471143" duration="1795000" />
+      <workItem from="1580288277726" duration="1794000" />
+      <workItem from="1580290084246" duration="1822000" />
+      <workItem from="1580292270203" duration="1619000" />
+      <workItem from="1580294619879" duration="373000" />
+      <workItem from="1580348136755" duration="1038000" />
+      <workItem from="1580349184826" duration="2248000" />
+      <workItem from="1580351529210" duration="1797000" />
+      <workItem from="1580353337241" duration="1795000" />
+      <workItem from="1580355174408" duration="1795000" />
+      <workItem from="1580356980698" duration="865000" />
+      <workItem from="1580360353708" duration="1794000" />
+      <workItem from="1580362162525" duration="1717000" />
+      <workItem from="1580363968457" duration="1794000" />
+      <workItem from="1580365775123" duration="1794000" />
+      <workItem from="1580367580622" duration="1795000" />
+      <workItem from="1580369390946" duration="1797000" />
+      <workItem from="1580371199988" duration="885000" />
+      <workItem from="1580372159819" duration="1793000" />
+      <workItem from="1580373967255" duration="1715000" />
+      <workItem from="1580375788234" duration="1796000" />
+      <workItem from="1580377596132" duration="1760000" />
+      <workItem from="1580433309660" duration="1775000" />
+      <workItem from="1580435096018" duration="1819000" />
+      <workItem from="1580436928724" duration="1673000" />
+      <workItem from="1580438809196" duration="1797000" />
+      <workItem from="1580440623915" duration="1842000" />
+      <workItem from="1580442494530" duration="2725000" />
+      <workItem from="1580447575171" duration="1811000" />
+      <workItem from="1580449399865" duration="1794000" />
+      <workItem from="1580451205754" duration="1801000" />
+      <workItem from="1580453142333" duration="1903000" />
+      <workItem from="1580455056215" duration="1783000" />
+      <workItem from="1580456911249" duration="2070000" />
+      <workItem from="1580460071394" duration="1794000" />
+      <workItem from="1580461880274" duration="1796000" />
+      <workItem from="1580463687387" duration="1775000" />
+      <workItem from="1580466150959" duration="1794000" />
+      <workItem from="1580467957694" duration="624000" />
+      <workItem from="1580692076832" duration="5000" />
+      <workItem from="1580692541890" duration="1276000" />
+      <workItem from="1580693873945" duration="103000" />
+      <workItem from="1580694025804" duration="24000" />
+      <workItem from="1580694063171" duration="2000" />
+      <workItem from="1580694080537" duration="3000" />
+      <workItem from="1580694094455" duration="2180000" />
+      <workItem from="1580696418007" duration="1830000" />
+      <workItem from="1580698269239" duration="1917000" />
+      <workItem from="1580700215966" duration="1632000" />
+      <workItem from="1580702034099" duration="1924000" />
+      <workItem from="1580706874774" duration="1796000" />
+      <workItem from="1580708700200" duration="1795000" />
+      <workItem from="1580710519542" duration="1812000" />
+      <workItem from="1580712346571" duration="1798000" />
+      <workItem from="1580714163638" duration="1827000" />
+      <workItem from="1580716024836" duration="1794000" />
+      <workItem from="1580717833166" duration="1907000" />
+      <workItem from="1580720050395" duration="1796000" />
+      <workItem from="1580721877436" duration="1826000" />
+      <workItem from="1580723754728" duration="1838000" />
+      <workItem from="1580725672356" duration="760000" />
+      <workItem from="1580778485868" duration="958000" />
+      <workItem from="1580781290028" duration="1805000" />
+      <workItem from="1580783106421" duration="1794000" />
+      <workItem from="1580784912584" duration="1575000" />
+      <workItem from="1580791634999" duration="1235000" />
+      <workItem from="1580796224195" duration="1793000" />
+      <workItem from="1580798029589" duration="1794000" />
+      <workItem from="1580799835803" duration="1979000" />
+      <workItem from="1580801837195" duration="1800000" />
+      <workItem from="1580803648581" duration="1795000" />
+      <workItem from="1580805471415" duration="1794000" />
+      <workItem from="1580807323687" duration="1812000" />
+      <workItem from="1580809299132" duration="1794000" />
+    </task>
+    <task id="LOCAL-00001" summary="In Time new file">
+      <created>1578462987005</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578462987005</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="In Time new file" />
+    <option name="LAST_COMMIT_MESSAGE" value="In Time new file" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#SQL_Dialects" timestamp="1579142657092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1579142657092" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580805555664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580805555664" />
+    <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578988314763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="675" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578988314763" />
+    <state x="640" y="245" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580349170471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="245" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580349170471" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580715301695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580715301695" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1580177967308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580177967308" />
+    <state x="669" y="235" key="MultipleFileMergeDialog" timestamp="1580178063961">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="235" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580178063961" />
+    <state x="776" y="442" key="NewPhpFileDialog" timestamp="1579150896505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579150896505" />
+    <state x="752" y="242" key="RollbackChangesDialog" timestamp="1578634932064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="242" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578634932064" />
+    <state x="421" y="323" key="SettingsEditor" timestamp="1578994429419">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="421" y="323" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578994429419" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580811104869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580811104869" />
+    <state x="637" y="249" width="646" height="542" key="find.popup" timestamp="1580458393535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="637" y="249" width="646" height="542" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580458393535" />
+    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog" timestamp="1580178058546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="231" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580178058546" />
+    <state x="745" y="310" key="git4idea.merge.GitMergeDialog" timestamp="1580715249658">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="745" y="310" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580715249658" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1580436807731">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580436807731" />
+    <state x="512" y="340" key="scopes" timestamp="1578994334072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="512" y="340" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1578994334072" />
+    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup" timestamp="1580723301219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="757" y="218" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580723301219" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/profile.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
