@@ -213,9 +213,9 @@ tr:nth-child(1) {
     border: 2px black groove;
     background-color: #a4c573;
     font-size: 20px;
-    left: 240px;
-    bottom: 41%;
-    width: 15%;
+    left: 45%;
+    bottom: 28%;
+    width: 20%;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -224,12 +224,12 @@ tr:nth-child(1) {
     border: 2px black groove;
     background-color: #a4c573;
     font-size: 20px;
-    left: 20%;
-    bottom: 20%;
+    left: 240px;
+    bottom: 35%;
     text-decoration: #0c0c0c;
     border-radius: 5px;
     cursor: pointer;
-    width: 55%;
+    width: 15%;
     text-align: center;
 }
 .cncl{
@@ -237,15 +237,13 @@ tr:nth-child(1) {
     border: 2px black groove;
     background-color: #a4c573;
     font-size: 20px;
-    left: 240px;
-    bottom: 34%;
+    left: 45%;
+    bottom: 20%;
     text-decoration: #0c0c0c;
     border-radius: 5px;
     cursor: pointer;
-    width: 15%;
+    width: 20%;
     text-align: center;
-
-   
 }
 
 .dropbtn1 {
@@ -320,7 +318,7 @@ label{
     font-family: SansSerif;
 }
 .div1{
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 90px;
 }
 
@@ -336,13 +334,13 @@ select{
 .border {
     position: absolute;
     border: 5px solid navajowhite;
-    left: 200px;
+    left: 330px;
     top: 150px;
-    bottom: 220px;
-    right: 200px;
+    bottom: 150px;
+    right: 250px;
     background-color: grey;
     z-index: -1;
     border-radius: 10px;
+   
 }
-
 
