@@ -58,49 +58,96 @@ foreach ($stmt as $row) {
     $date1 = $row['datetd'];
     $timein= $row['timein'];
     $timeout = $row['timeout'];
-    /*Creating the 9am basetime here*/
-    $basetime = strtotime('9:00:00 am');
-    $basetime1 = date("H:i:s",$basetime);
-    $basetimecreate = date_create($basetime1);
-
 
     $fullname = $name .$name1  ;
 
-    /*ends here*/
-
-    /*Create a difference between 9am - time in */
-    $time1 = date_create($timein);
-    $intmin = date_diff($time1,$basetimecreate);
-    /*Created the difference*/
-
-    $time2 = date_create($timeout);
+    $date1 = strtotime('9:00:00 am');
+    $time1 = date("H:i:s",$date1);
 
 
-    $interval = date_diff($basetimecreate,$time2);
+    $date3 = strtotime($row['timein']);
+    $time3 = date("H:i:s",$date3);
 
-    $interval1 = date_diff($time2,$time1);
+    $date2 = strtotime($row['timeout']);
+    $time2 = date("H:i:s",$date2);
 
-    $date = date('M. d, Y', strtotime($date1));
-    $dayOfTheWeek = date('l', strtotime($date));
 
-    $savedTimeIn = $timein ? date_create($timein)->format('h:i:s A') : '';
-    $savedTimeOut = $timeout ? date_create($timeout)->format('h:i:s A') : '';
+
+
+    if ($time3 > $time1)
+    {
+        $time3 = $time1;
+    }
+    else{
+        echo "";
+    };
+
+    if($time3 > $time1)
+    {
+        $time3 = $time3;
+    }else{
+        echo "";
+    };
+
+    var_dump($time3);
+    exit();
+
+    $time100 = date_create($time3);
+    $time200 = date_create($time2);
+
+    $interval = date_diff($time200, $time100);
+
+//echo "\n \n $time1";
+//
+//echo "\n \n $time2 ";
+
+
 
     $total = "";
 
-    if ($total > $timein)
+    if ($total = 0)
     {
+        $total = "";
+    }
+    else{
         $total =  $interval->format("%h hr/s");
+    }
 
-    }
-    elseif ($total < $timeout){
-        $total =  $interval1->format("%h hrs");
 
-    }
-    else
-    {
-        "";
-    }
+
+//    /*Creating the 9am basetime here*/
+//    $basetime = strtotime('9:00:00 am');
+//    $basetime1 = date("H:i:s",$basetime);
+//    $basetimecreate = date_create($basetime1);
+//    /*ends here*/
+//    /*Create a difference between 9am - time in */
+//    $time1 = date_create($timein);
+//    $intmin = date_diff($time1,$basetimecreate);
+//    /*Created the difference*/
+//    $time2 = date_create($timeout);
+//    $interval = date_diff($basetimecreate,$time2);
+//    $interval1 = date_diff($time2,$time1);
+//
+//   $total = "";
+//    if ($timeout > $basetime)
+//    {
+//        $total = $basetime;
+//
+//    }
+//    elseif ($timeout != null) {
+//        $total =  $interval1->format("%h hrs");
+//
+//    }else{
+//        echo "";
+//    };
+
+
+    $date = date('M. d, Y', strtotime($date1));
+    $dayOfTheWeek = date('l', strtotime($date));
+    $savedTimeIn = $timein ? date_create($timein)->format('h:i:s A') : '';
+    $savedTimeOut = $timeout ? date_create($timeout)->format('h:i:s A') : '';
+
+
 
     $late = strtotime('9:15:01 am');
     $sta = strtotime($timein);
